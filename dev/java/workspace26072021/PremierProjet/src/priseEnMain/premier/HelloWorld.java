@@ -38,7 +38,7 @@ public class HelloWorld {
 			x=5;
 			int y=5;
 		}
-		y=6;
+		
 		System.out.println(x);
 	}
 }
