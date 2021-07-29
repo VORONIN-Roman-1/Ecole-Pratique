@@ -1,15 +1,30 @@
 package priseEnMain.premier;
-import static java.lang.System.out;
-import java.io.PrintStream;
+//import static java.lang.System.out;
 
 public class HelloWorld {
-	
 	public static void main (String[] args) {
-		PrintStream p = out;
-		int x=3, y=-3;
-		if (x<0 || y<0)	p.println("Exists negative");
-		else p.print("ALL positive or 0");
-		if ( y!=0 && x/y>1)	p.println("YES");
-		else p.println("NON");
+		System.out.println("Hello World");
+		
+		double c = 3.3/9;
+		double d = 1.1/3;
+		float e = 1.1f/3;
+		double f = 1.1f/3;
+		
+		if(c == d)	
+			System.out.println("YES c = d    "+c+" = "+d);
+		else
+			System.out.println("NON c != d   "+c+" != "+d);
+		
+		if(e == f)	
+			System.out.println("YES e = f    "+e+" = "+f);
+		else
+			System.out.println("NON e! = f   "+e+" != "+f);
+		
+		if(d == f)	
+			System.out.println("YES d = f   "+d+" = "+f);
+		else
+			System.out.println("NON d != f   "+d+" != "+f);
+
+		
 	}
 }
