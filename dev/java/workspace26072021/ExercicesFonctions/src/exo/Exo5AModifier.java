@@ -1,10 +1,10 @@
 package exo;
 
+
 public class Exo5AModifier {
 
 	
 	public static void main(String[] args) {
-		
 		// Variables
 		String nom1 = "Florent";
 		String nom2 = "Yasmine";
