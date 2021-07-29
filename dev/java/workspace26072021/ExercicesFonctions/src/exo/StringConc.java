@@ -4,8 +4,10 @@ public class StringConc {
 	 public static void main (String[] args) {
 		 
 		 //EX3
-		 String [] premiere= new String [] {"Bonjour ", "comm", "ça va les ", "j’aime ", "progr", "du c"};
-		 String [] deuxieme= new String [] {"tout le monde ", "ent", "gens ", "beaucoup ", "ammer ", "ode "};
+		 String [] premiere= new String [] 
+				 {"Bonjour ", "comm", "ça va les ", "j’aime ", "progr", "du c"};
+		 String [] deuxieme= new String [] 
+				 {"tout le monde ", "ent", "gens ", "beaucoup ", "ammer ", "ode "};
 		 String [] conc= new String [premiere.length];
 		 for(int i=0; i<premiere.length; i++) {
 			 conc [i]=premiere[i]+ deuxieme[i];
