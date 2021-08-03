@@ -10,9 +10,7 @@ public class HelloWorld{
 		
 		print.print(s);
 		
-		/**print.print("Je m'appelle Toto et j'ai ");
-		print.print( age );
-		print.print(" age.");*/
+
 
 			
 
