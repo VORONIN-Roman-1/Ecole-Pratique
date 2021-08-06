@@ -11,13 +11,12 @@ public class ActionProfesseur {
 		String prenom = Recup.s();
 		System.out.println("matiere");
 		String matiere = Recup.s();
-		return new Professeur (nom, prenom, matiere);
-	} 
+		return new Professeur(nom, prenom, matiere);
+	}
+
 	public static Professeur[] initialisationProfesseur() {
-		return new Professeur[] { new Professeur ("Langevin","Roger", "Mathématiques"),
-				 new Professeur ("Einstein","Paul", "Géographie"),
-				 new Professeur ("Chartier","Albert", "Chimie"),
-		};
+		return new Professeur[] { new Professeur("Langevin", "Roger", "Mathématiques"),
+				new Professeur("Einstein", "Paul", "Géographie"), new Professeur("Chartier", "Albert", "Chimie"), };
 	}
 
 }
