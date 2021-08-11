@@ -16,7 +16,7 @@ public class ActionProfesseur {
 
 	public static Professeur[] initialisationProfesseur() {
 		return new Professeur[] { new Professeur("Langevin", "Roger", "Mathématiques"),
-				new Professeur("Einstein", "Paul", "Géographie"), new Professeur("Chartier", "Albert", "Chimie"), };
+				new Professeur("Einstein", "Paul", "Géographie"), new Professeur("Chartier", "Albert", "Chimie") };
 	}
 
 }
