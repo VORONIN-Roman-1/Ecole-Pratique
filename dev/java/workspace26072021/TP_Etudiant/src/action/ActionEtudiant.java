@@ -24,20 +24,20 @@ public class ActionEtudiant {
 
 	public static Etudiant[] initialisationEtudiants() {
 		Adresse[] adresses = ActionAdresse.initialisationAdresses();
-		return new Etudiant[] { new Etudiant("Audiard", "Jean-Paul", adresses[0], new float[] { 1.2f, 3.5f, 14, 6f }),
-				new Etudiant("Lanoux", "Emmanuelle", adresses[1], new float[] { 7.8f, 9.4f, 4, 2f }),
-				new Etudiant("Belmondo", "Victor", adresses[2], new float[] { 5.0f, 11.3f, 8, 9f }),
-				new Etudiant("Rochefort", "Jacques ", adresses[3], new float[] { 3.2f, 12.8f, 2, 0f }),
-				new Etudiant("Riva", "Alexander", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Kristoff", "Jean", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Rondeaux", "Louis", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Perrot", "Claude", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Flickinger", "Alexandre", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Rogers", "Guillaume", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Trousselier", "Octave", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Vinokourov", "Roger", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Lapize", "Andy", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Sagan", "Michael", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }),
-				new Etudiant("Chapperon", "Peter", adresses[4], new float[] { 9.2f, 7.3f, 11, 9f }) };
+		return new Etudiant[] { new Etudiant("Audiard", "Jean-Paul", adresses[0], new float[] { 1.2f, 3.5f, 6f }),
+				new Etudiant("Lanoux", "Emmanuelle", adresses[1], new float[] { 7.8f, 9.4f, 2f }),
+				new Etudiant("Belmondo", "Victor", adresses[2], new float[] { 5.0f, 11.3f, 9f }),
+				new Etudiant("Rochefort", "Jacques ", adresses[3], new float[] { 3.2f, 12.8f, 0f }),
+				new Etudiant("Riva", "Alexander", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Kristoff", "Jean", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Rondeaux", "Louis", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Perrot", "Claude", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Flickinger", "Alexandre", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Rogers", "Guillaume", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Trousselier", "Octave", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Vinokourov", "Roger", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Lapize", "Andy", adresses[4], new float[] { 9.2f, 7.3f,  9f }),
+				new Etudiant("Sagan", "Michael", adresses[4], new float[] { 9.2f, 7.3f, 9f }),
+				new Etudiant("Chapperon", "Peter", adresses[4], new float[] { 9.2f, 7.3f, 9f }) };
 	}
 }
