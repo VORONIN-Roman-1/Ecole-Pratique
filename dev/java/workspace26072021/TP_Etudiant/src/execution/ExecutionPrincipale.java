@@ -65,7 +65,8 @@ public class ExecutionPrincipale {
 	public static void AfficherDetailClasseConcret(Classe[] classes, int inputMenu2) {
 
 		if (inputMenu2 > 0 && inputMenu2 <= classes.length) {
-			show(classes[inputMenu2 - 1].affichage() + "\n");
+			show(classes[inputMenu2 - 1].affichage());
+			showVideLine();
 		}
 	}
 
