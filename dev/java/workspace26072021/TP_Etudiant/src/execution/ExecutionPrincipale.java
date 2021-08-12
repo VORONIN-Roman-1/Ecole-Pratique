@@ -14,67 +14,100 @@ public class ExecutionPrincipale {
 			input = Recup.i();
 			switch (input) {
 			case 1:
-				showMenuChoix1();
-				for (Classe classe : classes) {
-					show(classe.affichageMoyenne());
-				}
-				showVideLine();
+				AfficherMoyennes(classes);
 				break;
+
 			case 2:
-				showMenuChoix2();
-				for (int i = 0; i < classes.length; i++) {
-					showOneLine(String.valueOf(i + 1) + ")");
-					showClasse();
-					show(classes[i].nom);
-				}
-				showRetour();
-
+				AfficherAllClasse(classes);
 				int inputMenu2 = Recup.i();
-				if (inputMenu2 > 0 && inputMenu2 <= classes.length) {
-					show(classes[inputMenu2 - 1].affichage() + "\n");
-				}
+				AfficherDetailClasseConcret(classes, inputMenu2);
 				break;
-			case 3:
-				showMenuChoix3();
-				for (Classe classe : classes) {
-					for (String etudiant : classe.tableauEtudiants())
-						show(etudiant);
-				}
-				showVideLine();
-				break;
-			case 4:
-				showMenuChoix4();
-				int countMenuChoix4 = 0;
-				for (int i = 0; i < classes.length; i++) {
-					for (int j = 0; j < classes[i].etudiants.length; j++) {
-						countMenuChoix4++;
-						show(countMenuChoix4 + ") " + classes[i].etudiants[j].nomPrenom());
-					}
-				}
-				showRetour();
 
-				int inputMenu4 = Recup.i();
-				countMenuChoix4 = 0;
-				for (int i = 0; i < classes.length; i++) {
-					for (int j = 0; j < classes[i].etudiants.length; j++) {
-						countMenuChoix4++;
-						if (inputMenu4 == countMenuChoix4)
-							show(classes[i].etudiants[j].affichage());
-					}
-				}
-				showVideLine();
+			case 3:
+				AfficherEtudiants(classes);
 				break;
+
+			case 4:
+				AfficherAllEtudiant(classes);
+				int inputMenu4 = Recup.i();
+				AfficherDetailEtudiantConcret(classes, inputMenu4);
+				break;
+
 			case 5:
-				showMenuChoix5();
-				for (Classe classe : classes) {
-					show(classe.professeurPrincipal.nomPrenom());
-				}
-				showVideLine();
+				AfficherProfesseurs(classes);
 				break;
 
 			}
 
 		} while (input != 0);
+
+	}
+
+	public static void AfficherMoyennes(Classe[] classes) {
+		showMenuChoix1();
+		for (Classe classe : classes) {
+			show(classe.affichageMoyenne());
+		}
+		showVideLine();
+	}
+
+	public static void AfficherAllClasse(Classe[] classes) {
+
+		showMenuChoix2();
+		for (int i = 0; i < classes.length; i++) {
+			showOneLine(String.valueOf(i + 1) + ")");
+			showClasse();
+			show(classes[i].nom);
+		}
+		showRetour();
+	}
+
+	public static void AfficherDetailClasseConcret(Classe[] classes, int inputMenu2) {
+
+		if (inputMenu2 > 0 && inputMenu2 <= classes.length) {
+			show(classes[inputMenu2 - 1].affichage() + "\n");
+		}
+	}
+
+	public static void AfficherEtudiants(Classe[] classes) {
+		showMenuChoix3();
+		for (Classe classe : classes) {
+			for (String etudiant : classe.tableauEtudiants())
+				show(etudiant);
+		}
+		showVideLine();
+	}
+
+	public static void AfficherAllEtudiant(Classe[] classes) {
+		showMenuChoix4();
+		int countMenuChoix4 = 0;
+		for (int i = 0; i < classes.length; i++) {
+			for (int j = 0; j < classes[i].etudiants.length; j++) {
+				countMenuChoix4++;
+				show(countMenuChoix4 + ") " + classes[i].etudiants[j].nomPrenom());
+			}
+		}
+		showRetour();
+	}
+
+	public static void AfficherDetailEtudiantConcret(Classe[] classes, int inputMenu4) {
+		int countMenuChoix4 = 0;
+		for (int i = 0; i < classes.length; i++) {
+			for (int j = 0; j < classes[i].etudiants.length; j++) {
+				countMenuChoix4++;
+				if (inputMenu4 == countMenuChoix4)
+					show(classes[i].etudiants[j].affichage());
+			}
+		}
+		showVideLine();
+	}
+
+	public static void AfficherProfesseurs(Classe[] classes) {
+		showMenuChoix5();
+		for (Classe classe : classes) {
+			show(classe.professeurPrincipal.nomPrenom());
+		}
+		showVideLine();
 
 	}
 
