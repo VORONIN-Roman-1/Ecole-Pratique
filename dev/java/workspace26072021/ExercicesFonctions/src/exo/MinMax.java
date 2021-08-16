@@ -12,7 +12,10 @@ public class MinMax {
 			max=max>m[i]?max:m[i];
 			somme+=m[i];
 		}
+		int i=30;
+		// TODO change exo.moyenne
 		moyenne=(double)somme/m.length;
+		// FIXME corriger
 		System.out.println("min = "+min+"\nmax = "+max+ "\nsomme = "+
 		somme+"\nmoyenne = "+ moyenne);
 		
