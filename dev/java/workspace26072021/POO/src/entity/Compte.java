@@ -1,8 +1,8 @@
 package entity;
 
 public class Compte {
-	public double solde;
-	public String titulaire;
+	private double solde;
+	private String titulaire;
 	
 	public Compte(double solde, String titulaire) {
 		this.solde = solde;

@@ -25,6 +25,7 @@ public class Procedure {
 		System.out.println("La surface du carre2 est : "+ carre2.surface());
 		*/
 		
+		////EX1
 		Chien chien1 = new Chien ("Medor","marron","3");
 		Chien chien2 = new Chien ("Lassie","rousse","5");
 		Chien chien3 = new Chien ("Milou","clair","4");
@@ -37,6 +38,7 @@ public class Procedure {
 		chien2.aboie();
 		chien3.aboie();
 		
+		 //EX2
 		Compte compte= new Compte(1000, "Ivan");
 		compte.afficher();
 		compte.depot(200);
@@ -57,6 +59,7 @@ public class Procedure {
 			Etudiant etudiant = new Etudiant(nom, note1, note2);
 			//etudiant.show();
 			etudiants[i]= etudiant;
+			i++;
 		}
 		for (Etudiant etudiant:etudiants) {
 			etudiant.show();

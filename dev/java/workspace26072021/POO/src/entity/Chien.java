@@ -1,9 +1,9 @@
 package entity;
 
 public class Chien {
-	public String nom ;
-	public String couleur;
-	public String age ;
+	private String nom ;
+	private String couleur;
+	private String age ;
 	public Chien(String nom, String couleur, String age) {
 		this.nom = nom;
 		this.couleur = couleur;

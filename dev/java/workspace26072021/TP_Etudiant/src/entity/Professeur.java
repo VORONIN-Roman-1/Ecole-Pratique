@@ -1,9 +1,9 @@
 package entity;
 
 public class Professeur {
-	public String nom;
-	public String prenom;
-	public String matiere;
+	private String nom;
+	private String prenom;
+	private String matiere;
 
 	public Professeur(String nom, String prenom, String matiere) {
 		this.nom = nom;
