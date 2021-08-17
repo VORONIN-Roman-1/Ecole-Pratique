@@ -1,10 +1,8 @@
 package exec;
 
-import entity.Carre;
 import entity.Chien;
 import entity.Compte;
 import entity.Etudiant;
-import entity.Rectangle;
 import util.Recup;
 
 public class Procedure {

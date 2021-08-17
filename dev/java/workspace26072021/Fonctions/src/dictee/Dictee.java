@@ -24,7 +24,6 @@ public class Dictee {
 			while (total!=100) {
 				int i=1;
 				System.out.println("Donnez le prix "+ i);
-				float saisie = Recup.reel();
 				float prix= i*1.37f;
 				if (prix>8.3f) {
 					prix-=3;
