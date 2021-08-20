@@ -10,4 +10,19 @@ public class Rectangle extends Figure {
 		return hauteur * largeur;
 	}
 
+	public Rectangle(String nom, int hauteur, int largeur) {
+		super(nom);
+		this.hauteur = hauteur;
+		this.largeur = largeur;
+	}
+
+	public Rectangle(String nom) {
+		super(nom);
+	}
+
+	public Rectangle() {
+		super();
+	}
+	
+
 }
