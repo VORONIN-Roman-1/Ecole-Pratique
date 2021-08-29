@@ -1,0 +1,6 @@
+Travail à faire:
+Créer la base de données avec les clés primaire et étrangère.
+Ajouter la colonne date de naissance dans Etudiant : DateN.
+Ajouter la colonne Groupe : Groupe not null.
+Ajouter la contrainte unique pour les deux attributs (NEtudiant, CodeMat).
+
