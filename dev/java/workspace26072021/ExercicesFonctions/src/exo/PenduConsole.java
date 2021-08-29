@@ -22,7 +22,6 @@ public class PenduConsole {
 			}
 			length =lettresMot.length;
 		} while (length<10);
-		
 		for(int i=0; i<50; i++) {
 			System.out.println();
 		}

@@ -1,7 +1,7 @@
 package entity;
 
 public class Carre {
-	double largeur;
+	private double largeur;
 
 	public Carre(double largeur) {
 

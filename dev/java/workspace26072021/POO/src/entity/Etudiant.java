@@ -1,9 +1,9 @@
 package entity;
 
 public class Etudiant {
-	public String nom;
-	public int note1;
-	public int note2;
+	private String nom;
+	private int note1;
+	private int note2;
 	public Etudiant(String nom, int note1, int note2) {
 		this.nom = nom;
 		this.note1 = note1;
@@ -15,4 +15,5 @@ public class Etudiant {
 	public void show () {
 		System.out.println(nom+ " a la note moyenne :"+ calculeMoyenne());
 	}
+	
 }

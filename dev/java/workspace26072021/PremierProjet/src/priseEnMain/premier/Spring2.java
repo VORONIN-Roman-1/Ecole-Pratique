@@ -11,7 +11,7 @@ public class Spring2 {
 
 		String str = "harder - better - faster - stronger";
 		String[] strs = str.split("-");
-		System.out.println(strs[1].strip());
+		System.out.println(strs[1].trim());
 
 		////////// Ex3==========================
 		// Ecrire une fonction qui retourne le nombre de mots contenus dans

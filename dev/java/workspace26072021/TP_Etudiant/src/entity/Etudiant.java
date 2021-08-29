@@ -1,10 +1,10 @@
 package entity;
 
 public class Etudiant {
-	public String nom;
-	public String prenom;
-	public Adresse adresse;
-	float notes[] = new float[3];
+	private String nom;
+	private String prenom;
+	private Adresse adresse;
+	private float notes[] = new float[3];
 
 	public Etudiant(String nom, String prenom, Adresse adresse) {
 		this.nom = nom;

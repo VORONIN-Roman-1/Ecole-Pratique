@@ -9,7 +9,7 @@ public class Pendu {
 		int length=0;
 		
 		do {
-			System.out.println("Un mot secret de moins de 10 lettres, stp");
+			System.out.println("Un mot scret de moins de 10 lettres, stp");
 			String str= Recup.s();
 		    lettresMot= str.toCharArray();
 			length =lettresMot.length;
