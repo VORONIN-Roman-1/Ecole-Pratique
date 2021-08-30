@@ -1,0 +1,12 @@
+h1 {font-size: 50px;
+     color: white; 
+     background-color:black ;}
+img {
+    border: 2px solid black; 
+    width: 20%;
+}
+p{
+    color: blue;
+    font-size: 32px;
+    font-family: sans-serif;
+}
