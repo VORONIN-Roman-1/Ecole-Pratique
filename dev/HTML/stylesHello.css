@@ -1,0 +1,27 @@
+ul{
+    margin:auto;
+    line-height:100px;
+}
+
+
+li.logo{
+    display:inline-block;
+    line-height:10px;
+    vertical-align : middle;
+}
+
+nav li{
+    display:inline;
+    text-align:center;
+
+}
+
+li{
+    color:#FFF;
+    font-size:14px;
+    font-family: montserrat;
+    font-weight:thin;
+    letter-spacing:2px;
+    margin: 0 15px; 0 0;
+    line-height:50px;
+}

@@ -1,12 +1,64 @@
-h1 {font-size: 50px;
-     color: white; 
-     background-color:black ;}
-img {
+/*
+.lien img {
     border: 2px solid black; 
-    width: 20%;
+    height: 100px;
+    float:left;
+    margin-right:20px;
 }
 p{
     color: blue;
-    font-size: 32px;
-    font-family: sans-serif;
+    font-size: 22px;
+  
+    font-family: 'Open Sans', sans-serif;
 }
+li{
+    
+    margin-right:20px;
+    list-style: none;
+    display:inline-block;
+    
+ }
+ul{
+   
+    text-align: right; 
+    
+
+}
+main{
+    clear: both;
+
+}
+nav {
+    line-height:100px;
+} */
+img {
+    vertical-align: middle;
+    display: inline-block;
+}
+nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+}
+ul{
+   
+    text-align: right; 
+    padding-right: 20px;
+    
+
+}
+li{
+    display:inline-block;
+    list-style: none;
+    
+    margin:10px;
+    background-color: gray;
+    
+    
+ }
+ nav ul li a {
+     text-decoration: none;
+     color: #000;
+     background-color: gray;
+     padding: 20px;
+ }
