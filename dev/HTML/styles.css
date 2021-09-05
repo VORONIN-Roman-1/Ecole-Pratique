@@ -1,11 +1,127 @@
-/*
-.lien img {
-    border: 2px solid black; 
-    height: 100px;
-    float:left;
-    margin-right:20px;
+body{
+    --text-color:  rgb(43, 56, 102);
 }
-p{
+/*------------- HEADER---------*/
+
+@media all and  (max-width: 900px){
+    header {
+        flex-direction: column;
+    }
+    header nav ul{
+        align-items: flex-end;
+    }
+
+}
+
+header {
+    background-color:var(--text-color);
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    margin: 10px;
+    width: 100px;;
+}
+
+header nav{
+    width: 100%;
+}
+
+header nav ul{
+    display: flex;
+    padding: 0px;
+        justify-content: space-around;
+}
+
+header nav ul li{
+    font-family: 'Dancing Script', cursive;
+    font-size:x-large;
+    padding: 0px;
+    margin-right:0px;
+    list-style: none;
+    display:inline-block;
+    text-decoration: none;
+    
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: oldlace;
+}
+        
+        
+/*------------MAIN--------------*/
+main{
+    width: 80%;
+    margin: auto;
+    text-align:justify;
+
+}
+main h1{
+    text-align: center;
+}
+main section {
+    margin: 1rem;
+    border: 1px solid black;
+    overflow: hidden;
+    padding: 5px;
+}
+
+main section figure{
+    width: 80px;
+    float:left;
+    margin: 0px;
+    padding-right: 5px;
+
+}
+
+main section figure img{
+    width: inherit;
+}
+
+main section figure figcaption{
+    text-align: center;
+    font-size: x-small;
+    width: inherit;
+}
+main section form{
+    text-align: right; 
+}
+main section form button{
+    text-align: right; 
+    background-color: var(--text-color);
+    color: oldlace;
+    border: none;
+    padding: 5px 10px;
+}
+/*------------FOOTER--------------*/
+footer{
+   text-align: center;
+}
+.wrapper {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .wrapper i {
+    padding: 10px;
+  }
+  .wrapper a:nth-child(1) {
+    color:var(--text-color);
+  }
+  .wrapper a:nth-child(2) {
+    color:var(--text-color);
+  }
+  .wrapper a:nth-child(3) {
+    color: var(--text-color);
+  }
+  .wrapper a:nth-child(4) {
+    color: var(--text-color);
+  }
+/*p{
     color: blue;
     font-size: 22px;
   
@@ -31,11 +147,13 @@ main{
 nav {
     line-height:100px;
 } */
-img {
+
+/*img {
     vertical-align: middle;
     display: inline-block;
 }
 nav {
+    font-family: 'Dancing Script', cursive;
     display: inline-block;
     vertical-align: middle;
     width: 70%;
@@ -62,3 +180,4 @@ li{
      background-color: gray;
      padding: 20px;
  }
+*/
