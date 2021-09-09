@@ -1,0 +1,82 @@
+html {
+    font-size: 62.5%;
+}
+
+img {
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8rem;
+}
+
+.menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    text-align: right;
+}
+
+.menu ul {
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    padding: 0 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.menu li a {
+    color: #000000;
+}
+
+a img {
+    width: 450px;
+    height: 100px
+}
+
+p {
+    color: #000000;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+
+.float-left {
+    float: left;
+    padding-right: 20px;
+}
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    background-color:red;
+}
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color:yellow;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    left: 375px;
+    top: 125px;
+}
+
+
+
+
