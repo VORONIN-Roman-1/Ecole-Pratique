@@ -8,7 +8,7 @@ body{
         flex-direction: column;
     }
     header nav ul{
-        align-items: flex-end;
+        
     }
 
 }
@@ -20,7 +20,7 @@ header {
     align-items: center;
     justify-content: space-between;
 }
-grid
+
 header img {
     margin: 10px;
     width: 100px;;
@@ -109,7 +109,10 @@ footer{
   .wrapper i {
     padding: 10px;
   }
-  .wrapper a:nth-child(1) {
+  .wrapper a i {
+    color:var(--text-color);
+  }
+  /* .wrapper a:nth-child(1) {
     color:var(--text-color);
   }
   .wrapper a:nth-child(2) {
@@ -120,7 +123,8 @@ footer{
   }
   .wrapper a:nth-child(4) {
     color: var(--text-color);
-  }
+  } */
+
 /*p{
     color: blue;
     font-size: 22px;
