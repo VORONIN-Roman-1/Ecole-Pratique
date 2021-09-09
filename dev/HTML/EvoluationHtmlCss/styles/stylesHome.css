@@ -1,0 +1,39 @@
+header a{
+display: flex;
+justify-content: center;
+}
+header nav{
+    width: 90%;
+    margin: auto;
+
+}
+
+
+header nav ul{
+    background-color: #85929e;
+    
+    display: flex;
+
+    padding: 0px;
+        justify-content: space-between;
+        text-decoration: none;
+    
+}
+header nav ul li { 
+    color: #e5e2e2;
+    font-family: PT Sans N;
+    font-size:large;
+    padding: 0px;
+    margin-right:0px;
+    list-style: none;
+    display:inline-block;
+    text-decoration: none;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+}
+#reserver {
+    background-color: #ccb861;
+    color: #baa64e;
+}
