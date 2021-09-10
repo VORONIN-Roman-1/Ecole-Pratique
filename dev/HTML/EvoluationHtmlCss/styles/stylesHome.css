@@ -1,0 +1,66 @@
+.logo{
+text-align: center;
+margin: 1rem;
+
+}
+.nav{
+    width: 90%;
+    margin: auto;
+    display: table;
+
+}
+.nav ul{
+    display: table-row;
+}
+.nav li { 
+    display: table-cell;
+    background-color: #85929e;
+    font-family: 'PT Sans Narrow', sans-serif, bold;
+    padding: 10px;
+    text-align: center;
+}
+.nav li:hover { 
+    background-color: #e5e2e2;
+    
+    
+}
+.nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+#reserver {
+    background-color: #ccb861;
+    color: white;
+}
+#reserver:hover {
+    background-color: #baa64e;
+}
+#reserver a {
+    color: white;
+}
+
+
+
+.menu {
+	width: 90%;
+    margin: auto;
+	display: table;
+}
+.menu ul {
+	display: table-row;
+}
+.menu li {
+	display: table-cell;
+	background: #2767A0;
+}
+.menu ul li:hover, .menu a:hover {
+	background: #666;
+}
+.menu li a {
+	display: block;
+	padding: 8px 15px;
+	color: #fff;
+	text-align: center;
+}
