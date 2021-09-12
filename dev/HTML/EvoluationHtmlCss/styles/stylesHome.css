@@ -3,6 +3,7 @@ text-align: center;
 margin: 1rem;
 
 }
+
 .nav{
     width: 90%;
     margin: auto;
@@ -48,8 +49,10 @@ margin: 1rem;
     text-align: center;
     animation-name:  opacityAnimation;
     animation-duration: 60s;
+ 
     
     animation-iteration-count: infinite;
+    
     --animation-direction: alternate;
 }
 
@@ -61,18 +64,108 @@ margin: 1rem;
 }
 @keyframes opacityAnimation {
     from {
-        --opacity: 0.2;
-        background:no-repeat center/90% url(../img/slide2.jpg);
-        
-    }
-    33%{
         background:no-repeat center/90% url(../img/slide1.jpg);
     }
+    30% {
+        background:no-repeat center/90% url(../img/slide1.jpg);
+    }
+    33%{
+        background:no-repeat center/90% url(../img/slide2.jpg);
+    }
+    63% {
+    
+        background:no-repeat center/90% url(../img/slide2.jpg); 
+    }
     66% {
-        --opacity: 0.9;
+    
+        background:no-repeat center/90% url(../img/slide3.jpg); 
+    }
+
+    97% {
+    
         background:no-repeat center/90% url(../img/slide3.jpg); 
     }
     to{
-        background:no-repeat center/90% url(../img/slide2.jpg);
+        background:no-repeat center/90% url(../img/slide1.jpg);
     }
 }
+.welcome{
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    padding: 1rem;
+    width: 60%;
+    margin: auto;
+    text-align:justify;
+    overflow: hidden;
+    
+}
+.welcome img{
+    float: left;
+    margin: 0 1rem 0.5rem 0;
+    width: 20%;
+}
+#savoirPlus {
+    background-color: #ccb861;
+    color: white;
+    text-decoration: none;
+}
+
+
+.welcomSection {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    width: 60%;
+    text-align:justify;
+    margin: auto;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.welcomSection figure{
+    width: 120px;
+    float:left;
+    margin: 0px;
+    padding-right: 10px;
+
+}
+
+.welcomSection figure img{
+    width: inherit;
+}
+
+
+.welcomSection form{
+    text-align: right; 
+}
+.welcomSection form button{
+    text-align: right; 
+    background-color: #ccb861;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+.decouvrer {
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 90%;
+    text-align: center;
+    color: white;
+    --filter: brightness(40%);
+    --background:no-repeat center/100% url(../img/discover.jpg); 
+    --background-color: rgba(0, 0, 100, 0.5);
+    background-position: center;
+    background-size: cover;
+
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
+}
+.decouvrer button{
+    background-color: #ccb861;
+   filter: none;
+    border: none;
+    padding: 5px 10px;
+
+}
+--.decouvrer *:not(.nofading){
+ --   filter: brightness(40%);
+--}
