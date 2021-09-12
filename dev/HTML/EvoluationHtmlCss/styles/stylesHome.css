@@ -7,6 +7,7 @@ margin: 1rem;
     width: 90%;
     margin: auto;
     display: table;
+    margin-bottom: 1rem;
 
 }
 .nav ul{
@@ -16,7 +17,7 @@ margin: 1rem;
     display: table-cell;
     background-color: #85929e;
     font-family: 'PT Sans Narrow', sans-serif, bold;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 .nav li:hover { 
@@ -24,10 +25,11 @@ margin: 1rem;
     
     
 }
-.nav ul li a{
-    display: block;
+.nav a{
     text-decoration: none;
+    display: block;
     color: black;
+    padding: 10px 0px 10px 0px;
 }
 
 #reserver {
@@ -38,29 +40,39 @@ margin: 1rem;
     background-color: #baa64e;
 }
 #reserver a {
+    
     color: white;
 }
+.slides{
+    width: 100%;
+    text-align: center;
+    animation-name:  opacityAnimation;
+    animation-duration: 60s;
+    
+    animation-iteration-count: infinite;
+    --animation-direction: alternate;
+}
 
+.slides img{
+    width: 90%;
 
-
-.menu {
-	width: 90%;
-    margin: auto;
-	display: table;
+    opacity: 0.01;
+    
 }
-.menu ul {
-	display: table-row;
-}
-.menu li {
-	display: table-cell;
-	background: #2767A0;
-}
-.menu ul li:hover, .menu a:hover {
-	background: #666;
-}
-.menu li a {
-	display: block;
-	padding: 8px 15px;
-	color: #fff;
-	text-align: center;
+@keyframes opacityAnimation {
+    from {
+        --opacity: 0.2;
+        background:no-repeat center/90% url(../img/slide2.jpg);
+        
+    }
+    33%{
+        background:no-repeat center/90% url(../img/slide1.jpg);
+    }
+    66% {
+        --opacity: 0.9;
+        background:no-repeat center/90% url(../img/slide3.jpg); 
+    }
+    to{
+        background:no-repeat center/90% url(../img/slide2.jpg);
+    }
 }
