@@ -3,10 +3,12 @@ text-align: center;
 margin: 1rem;
 
 }
+
 .nav{
     width: 90%;
     margin: auto;
     display: table;
+    margin-bottom: 1rem;
 
 }
 .nav ul{
@@ -16,7 +18,7 @@ margin: 1rem;
     display: table-cell;
     background-color: #85929e;
     font-family: 'PT Sans Narrow', sans-serif, bold;
-    padding: 10px;
+    padding: 0px;
     text-align: center;
 }
 .nav li:hover { 
@@ -24,10 +26,11 @@ margin: 1rem;
     
     
 }
-.nav ul li a{
-    display: block;
+.nav a{
     text-decoration: none;
+    display: block;
     color: black;
+    padding: 10px 0px 10px 0px;
 }
 
 #reserver {
@@ -38,29 +41,131 @@ margin: 1rem;
     background-color: #baa64e;
 }
 #reserver a {
+    
     color: white;
 }
+.slides{
+    width: 100%;
+    text-align: center;
+    animation-name:  opacityAnimation;
+    animation-duration: 60s;
+ 
+    
+    animation-iteration-count: infinite;
+    
+    --animation-direction: alternate;
+}
 
+.slides img{
+    width: 90%;
 
+    opacity: 0.01;
+    
+}
+@keyframes opacityAnimation {
+    from {
+        background:no-repeat center/90% url(../img/slide1.jpg);
+    }
+    30% {
+        background:no-repeat center/90% url(../img/slide1.jpg);
+    }
+    33%{
+        background:no-repeat center/90% url(../img/slide2.jpg);
+    }
+    63% {
+    
+        background:no-repeat center/90% url(../img/slide2.jpg); 
+    }
+    66% {
+    
+        background:no-repeat center/90% url(../img/slide3.jpg); 
+    }
 
-.menu {
-	width: 90%;
+    97% {
+    
+        background:no-repeat center/90% url(../img/slide3.jpg); 
+    }
+    to{
+        background:no-repeat center/90% url(../img/slide1.jpg);
+    }
+}
+.welcome{
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    padding: 1rem;
+    width: 60%;
     margin: auto;
-	display: table;
+    text-align:justify;
+    overflow: hidden;
+    
 }
-.menu ul {
-	display: table-row;
+.welcome img{
+    float: left;
+    margin: 0 1rem 0.5rem 0;
+    width: 20%;
 }
-.menu li {
-	display: table-cell;
-	background: #2767A0;
+#savoirPlus {
+    background-color: #ccb861;
+    color: white;
+    text-decoration: none;
 }
-.menu ul li:hover, .menu a:hover {
-	background: #666;
+
+
+.welcomSection {
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    width: 60%;
+    text-align:justify;
+    margin: auto;
+    overflow: hidden;
+    padding: 5px;
 }
-.menu li a {
-	display: block;
-	padding: 8px 15px;
-	color: #fff;
-	text-align: center;
+
+.welcomSection figure{
+    width: 120px;
+    float:left;
+    margin: 0px;
+    padding-right: 10px;
+
 }
+
+.welcomSection figure img{
+    width: inherit;
+}
+
+
+.welcomSection form{
+    text-align: right; 
+}
+.welcomSection form button{
+    text-align: right; 
+    background-color: #ccb861;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+}
+.decouvrer {
+    margin: auto;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 90%;
+    text-align: center;
+    color: white;
+    --filter: brightness(40%);
+    --background:no-repeat center/100% url(../img/discover.jpg); 
+    --background-color: rgba(0, 0, 100, 0.5);
+    background-position: center;
+    background-size: cover;
+
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
+}
+.decouvrer button{
+    background-color: #ccb861;
+   filter: none;
+    border: none;
+    padding: 5px 10px;
+
+}
+--.decouvrer *:not(.nofading){
+ --   filter: brightness(40%);
+--}
