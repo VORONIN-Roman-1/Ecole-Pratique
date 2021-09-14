@@ -45,7 +45,7 @@ public class Utilisateur extends HttpServlet {
 				+ "    </tbody>\r\n"
 				+ "</table>");
 		*/
-			out.println("<table style=\"border: 2px solid #333\";><tr>");
+			out.println("<table style=\"border: kk2px solid #333\";><tr>");
 			for (String film : tab) {
 				out.println("<td style=\"border: 1px solid #333\">"+film+"</td>");
 			}
@@ -53,6 +53,8 @@ public class Utilisateur extends HttpServlet {
  
 		out.println(" </body>");
 		out.println("</html>");
+		
+		
 		
 	}
 
