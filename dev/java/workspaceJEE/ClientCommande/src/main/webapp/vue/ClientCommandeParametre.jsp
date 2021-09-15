@@ -10,32 +10,20 @@
 <body>
 	<form action="#" style="width:400px">
 	  <fieldset style="width:400px">
-	    <legend>client 1:</legend>
+	    <legend>client :</legend>
 	    <label for="fname">Nom:</label>
-	    <input type="text" id="fname" name="fname" value="${clients[0].nom}"><br><br>
+	    <input type="text" id="fname" name="fname" value="${client.nom}" default="None"><br><br>
 	    <label for="lname">Prenom:</label>
-	    <input type="text" id="lname" name="" value="${clients[0].prenom}"><br><br>
+	    <input type="text" id="lname" name="" value="${client.prenom}"><br><br>
 	    <label for="age">Age:</label>
-	    <input type="text" id="age" name="" value="${clients[0].age}"><br><br>
-	  </fieldset>
-	</form>
-	<form action="#" style="width:400px">
-	  <fieldset style="width:400px">
-	    <legend>client 2:</legend>
-	    <label for="fname">Nom:</label>
-	    <input type="text" id="fname" name="fname" value="${clients[1].nom}"><br><br>
-	    <label for="lname">Prenom:</label>
-	    <input type="text" id="lname" name="" value="${clients[1].prenom}"><br><br>
-	    <label for="age">Age:</label>
-	    <input type="text" id="age" name="" value="${clients[1].age}"><br><br>
+	    <input type="text" id="age" name="" value="${client.age}"><br><br>
 	    <label for="Adresse2">Adresse2:</label>
-	    <input type="text" id="Adresse2" name="" value="${clients[1].adresse[1]}"><br><br>
+	    <input type="text" id="Adresse2" name="" value="${client.adresse[1]}"><br><br>
 	  </fieldset>
 	</form>
-	<p> <b> client 1 plus vieux client 2 : ${clients[0].age>clients[1].age} </b></p>
 	<form action="#" style="width:400px">
 	  <fieldset style="width:400px">
-	    <legend>commande:</legend>
+	    <legend>commande :</legend>
 	    <label for="article">Article:</label>
 	    <input type="text" id="article" name="fname" value="${commande.article}"><br><br>
 	    <label for="nombreArticle">Quantité:</label>
