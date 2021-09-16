@@ -221,6 +221,31 @@ margin: 1rem;
     padding: 5px 10px;
 
 }
+.map{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+map iframe{
+    width: 100%;
+}
+footer {
+    background-color: #85929e;
+    color: white;
+    text-align: center;
+    margin: 3rem;
+}
+footer nav ul{
+    display:flex;
+
+}
+footer nav a{
+    text-decoration: none;
+    color: #fff;
+}
+footer li {
+    list-style: none;
+}
 --.decouvrer *:not(.nofading){
  --   filter: brightness(40%);
 --}
