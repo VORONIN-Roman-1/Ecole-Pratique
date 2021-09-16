@@ -12,7 +12,7 @@
 	  <fieldset style="width:400px">
 	    <legend>client :</legend>
 	    <label for="fname">Nom:</label>
-	    <input type="text" id="fname" name="fname" value="${client.nom}" default="None"><br><br>
+	    <input type="text" id="fname" name="fname" value="${client.nom}"><br><br>
 	    <label for="lname">Prenom:</label>
 	    <input type="text" id="lname" name="" value="${client.prenom}"><br><br>
 	    <label for="age">Age:</label>
