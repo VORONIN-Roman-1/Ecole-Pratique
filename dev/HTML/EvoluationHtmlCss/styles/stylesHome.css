@@ -198,6 +198,54 @@ margin: 1rem;
     float: right;
     width: 30%;
 }
+.contacter{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+.contacter form{
+    text-align: left;
+    
+}
+.contacter textarea {
+    width: 100%;
+}
+.contacter div {
+    margin: auto;
+    text-align: center;
+}
+.contacter button{
+    background-color: #ccb861;
+   filter: none;
+    border: none;
+    padding: 5px 10px;
+
+}
+.map{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+map iframe{
+    width: 100%;
+}
+footer {
+    background-color: #85929e;
+    color: white;
+    text-align: center;
+    margin: 3rem;
+}
+footer nav ul{
+    display:flex;
+
+}
+footer nav a{
+    text-decoration: none;
+    color: #fff;
+}
+footer li {
+    list-style: none;
+}
 --.decouvrer *:not(.nofading){
  --   filter: brightness(40%);
 --}
