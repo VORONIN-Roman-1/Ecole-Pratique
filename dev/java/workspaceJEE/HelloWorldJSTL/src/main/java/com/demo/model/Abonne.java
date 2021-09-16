@@ -8,6 +8,18 @@ public class Abonne {
 	private Integer typeAbonnement;
 	private String adresse;
 	private List<Film> films;
+	private Abonne abonneDuo;
+	
+	public Abonne(String prenom, String nom, Integer typeAbonnement, String adresse, List<Film> films,
+			Abonne abonneDuo) {
+		this.prenom = prenom;
+		this.nom = nom;
+		this.typeAbonnement = typeAbonnement;
+		this.adresse = adresse;
+		this.films = films;
+		this.abonneDuo = abonneDuo;
+	}
+
 	public Abonne(String prenom, String nom, int typeAbonnement, String adresse) {
 		this.prenom = prenom;
 		this.nom = nom;
@@ -23,8 +35,24 @@ public class Abonne {
 		this.films = films;
 	}
 	
+	
+	public Abonne(String prenom, String nom, String adresse) {
+		this.prenom = prenom;
+		this.nom = nom;
+		this.adresse = adresse;
+	}
+
 	public Abonne() {
 	}
+	
+	public Abonne getAbonneDuo() {
+		return abonneDuo;
+	}
+
+	public void setAbonneDuo(Abonne abonneDuo) {
+		this.abonneDuo = abonneDuo;
+	}
+
 	public String getPrenom() {
 		return prenom;
 	}

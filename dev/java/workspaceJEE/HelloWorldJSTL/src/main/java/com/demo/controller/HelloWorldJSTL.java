@@ -32,8 +32,11 @@ public class HelloWorldJSTL extends HttpServlet {
 		films.add(film3);
 		films.add(film);
 		
-		Abonne abonne= new Abonne("Jacques", "Martin", 7, "56 rue de la Boustifaille 75012 PARIS", films );
+		Abonne abonneDuo= new Abonne("Ivan", "Ivanov", "586 rue de la Republique 13100 Aix-en-Provance");
+		Abonne abonne= new Abonne("Jacques", "Martin", 2, "56 rue de la Boustifaille 75012 PARIS", films, abonneDuo );
 		req.setAttribute("abonne", abonne);
+		
+		//req.setAttribute("abonneDuo", abonneDuo);
 		
 		
 		this.getServletContext().getRequestDispatcher("/vue/Abonne.jsp").forward(req, resp);

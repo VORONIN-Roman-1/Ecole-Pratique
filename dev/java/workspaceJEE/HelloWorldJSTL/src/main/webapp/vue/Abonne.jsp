@@ -6,13 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/style.css" >
 	<style>
-            table {
-                border: 1px solid #000;
-            }
-            th, td{
-                border: 1px solid #000;
-            }
+           
             
      </style>
 </head>
@@ -29,7 +25,14 @@
 				<c:otherwise> Aucun Abonnement</c:otherwise>
 			</c:choose>
 		</p>
-		<p>Adresse : <c:out value="${abonne.adresse}"></c:out></p> <br>
+		<p>Adresse : <c:out value="${abonne.adresse}"></c:out></p> 
+		<c:if test="${abonne.typeAbonnement==2}">
+			<p>Abonne DUO	</p>
+			<p>Prénom : <c:out value="${abonne.abonneDuo.prenom}"></c:out></p>
+			<p>Nom : <c:out value="${abonne.abonneDuo.nom}"></c:out></p>
+			<p>Adresse : <c:out value="${abonne.abonneDuo.adresse}"></c:out></p> <br>
+		</c:if>
+		<br>
 	</div>
 	<table>
 		<tr>
@@ -39,6 +42,8 @@
 		<th>Est vu</th>
 		</tr>
 		<c:forEach var="filmEnCours" items="${abonne.films}">
+			<c:forEach var="ghfgg" items="${abonne.films}">
+			</c:forEach>
 			<tr>
 				<td><c:out value="${filmEnCours.titre}"></c:out></td>
 				<td><c:out value="${filmEnCours.realisateur}"></c:out></td>
@@ -88,5 +93,6 @@
 		<p>Duree : <c:out value="${film.duree}"></c:out></p>
 		<p>Est vu : <c:out value="${film.estVu}"></c:out></p>
 	</div>
+	
 </body>
 </html>
