@@ -5,6 +5,7 @@ public class Film {
 	private String realisateur;
 	private Integer duree;
 	private Boolean estVu;
+	private String typeFilm;
 	
 	public Film() {
 	}
@@ -13,6 +14,13 @@ public class Film {
 		this.realisateur = realisateur;
 		this.duree = duree;
 		this.estVu = estVu;
+	}
+	
+	public String getTypeFilm() {
+		return typeFilm;
+	}
+	public void setTypeFilm(String typeFilm) {
+		this.typeFilm = typeFilm;
 	}
 	public String getTitre() {
 		return titre;

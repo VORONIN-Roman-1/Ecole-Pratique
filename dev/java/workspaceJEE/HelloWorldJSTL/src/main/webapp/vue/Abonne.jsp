@@ -42,8 +42,6 @@
 		<th>Est vu</th>
 		</tr>
 		<c:forEach var="filmEnCours" items="${abonne.films}">
-			<c:forEach var="ghfgg" items="${abonne.films}">
-			</c:forEach>
 			<tr>
 				<td><c:out value="${filmEnCours.titre}"></c:out></td>
 				<td><c:out value="${filmEnCours.realisateur}"></c:out></td>
