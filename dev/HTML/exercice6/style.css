@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3f4c6b;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.logo {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.menu {
+    width: 100%;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+
+/* ----- VERSION DESKTOP ----- */
+
+@media screen and (min-width: 1024px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3f4c6b;
+    }
+
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+article, figure, p {
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    clear: both;
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 1px solid #3f4c6b;
+}
+
+figure {
+    padding-right: 1.5rem;
+}
+
+.float-left {
+    float: left;
+}
+
+figcaption {
+    text-align: center;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+article div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+article div a {
+    font-size: 1.5rem;
+    background-color: #3f4c6b;
+    color: #ffffff;
+    padding: 0.8rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fab {
+    font-size: 2rem;
+    padding: 2rem;
+    color: #000000;
+}
+
+
+/* img {
+    border: 2px solid black;
+} */
+
+/* .logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 8rem;
+}
+
+/* .menu {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90%;
+    text-align: right;
+} */
+
+/* .menu ul {
+    padding: 0;
+}
+
+.menu li {
+    list-style: none;
+    display: inline;
+    padding: 0 2rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+.menu li a {
+    color: #000000;
+}
+
+a img {
+    width: 450px;
+    height: 100px
+}
+
+p {
+    color: #000000;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+}
+
+.float-left {
+    float: left;
+    padding-right: 20px;
+}
+
+.box1 {
+    width: 500px;
+    height: 500px;
+    background-color:red;
+}
+
+.box2 {
+    width: 250px;
+    height: 250px;
+    background-color:yellow;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+    left: 375px;
+    top: 125px;
+} */
+
+
+
+

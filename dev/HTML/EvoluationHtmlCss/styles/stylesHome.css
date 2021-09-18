@@ -230,7 +230,7 @@ map iframe{
     width: 100%;
 }
 footer {
-    background-color: #85929e;
+    background-color: #85929e;;
     color: white;
     text-align: center;
     margin: 3rem;
@@ -247,6 +247,3 @@ footer nav a{
 footer li {
     list-style: none;
 }
---.decouvrer *:not(.nofading){
- --   filter: brightness(40%);
---}
