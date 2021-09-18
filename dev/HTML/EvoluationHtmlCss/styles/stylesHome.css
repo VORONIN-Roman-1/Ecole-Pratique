@@ -161,6 +161,7 @@ margin: 1rem;
 }
 .decouvrer button{
     background-color: #ccb861;
+    color: white;
    filter: none;
     border: none;
     padding: 5px 10px;
@@ -193,6 +194,7 @@ margin: 1rem;
 }
 .experience span{
     color: #ccb861;
+    
 }
 .experience video{
     float: right;
@@ -219,6 +221,7 @@ margin: 1rem;
    filter: none;
     border: none;
     padding: 5px 10px;
+    color: white;
 
 }
 .map{
@@ -229,21 +232,75 @@ margin: 1rem;
 map iframe{
     width: 100%;
 }
+
 footer {
     background-color: #85929e;;
     color: white;
     text-align: center;
-    margin: 3rem;
+    padding-top: 1rem;
+    margin: 0px;
 }
-footer nav ul{
-    display:flex;
+.footerMenuResaux{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0px;
+    
+}
+.footerNav{
+    --width: 60%;
+}
+.footerNav ul{
+     display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 0px;
+
+    
     
 
-}
-footer nav a{
+} 
+.footerNav a{
     text-decoration: none;
     color: #fff;
 }
-footer li {
+.footerNav li {
     list-style: none;
+    margin: 1rem;
 }
+.wrapper {
+    --display: flex;
+    --justify-content: space-between;
+    
+}
+.wrapper i {
+    margin-right: 3rem;
+ }
+.wrapper a i {
+ color:white;
+ }
+.wrapper::after{
+    clear:both;
+}
+
+.reseaux{
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+}
+.reseaux button{
+    background-color: #ccb861;
+    color: white;
+    filter: none;
+    border: none;
+    padding: 5px 10px;
+
+}
+#important{
+    font-size: xx-small;
+}
+
+      
