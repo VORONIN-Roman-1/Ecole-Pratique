@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="styles/all.css"/>
     <link rel="stylesheet" type="text/css" href="styles/styleFooter.css"/> 
     <link rel="stylesheet" type="text/css" href="styles/stylesHome.css"/>    
@@ -11,9 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">     -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
-    
+
+    <!-- <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    -->
+    <!-- Bootstrap CSS -->
+   
     <title>Hotel Royal</title>
 </head>
 <body>
@@ -25,7 +31,7 @@
 
         </div>
           
-        <nav class="nav">
+        <nav class="navigation">
         
             <ul>
                 <li><a href="/accueil">ACCUEIL</a></li>
@@ -40,45 +46,44 @@
         </nav>
     </header>
     <main >
-        
-        <div class="slides"><img src="img/slide1.jpg" alt="bel appartement"></div>
-        <section class="welcomSection">
-            <h1>Bienvenue au Le Royal</h1>
-            <figure>
-                <img src="img/welcome.jpg" alt="Bienvenue au Le Royal">
-            </figure>
-            <article>
-                <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore, et, rem officia atque, dolor voluptatibus consequuntur dolorum ipsa nobis voluptate aliquam nesciunt nulla repellat quo fugit iure quaerat officiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eos fuga hic, quam amet doloribus dolore dolores eligendi nihil, sit fugit odio repellat consequuntur tempore velit tempora suscipit cupiditate quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ullam ipsam ut ea non eaque cumque, aliquam accusantium assumenda ex dignissimos, similique voluptatem, sequi fugit qui quia sunt recusandae. Possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora commodi cum quia! Quidem, sed explicabo ut voluptates dolores doloremque minima nesciunt veniam aliquam illum. Laboriosam exercitationem minus ipsam neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minima modi corporis eveniet molestiae incidunt ad eaque, deleniti repudiandae, esse ipsa officia, voluptas ex earum asperiores culpa porro fugiat magnam?</span>
-            </article>
-            <form action="index.html">
-                <button  >En savoir plus
-                </button>
-            </form>
-        </section>  
-        <div class="welcome">
-            <h1>Beinvenue au le Royal</h1>
-            <div> <img src="img/welcome.jpg" alt="Bienvenue au Le Royal"></div>
-           
-            <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum inventore consequatur harum sed ad amet. Quaerat, distinctio dolorum itaque voluptates amet ipsum ipsam quo quasi omnis culpa minima eius? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ratione consectetur illum id ab alias fugiat iste, doloribus dignissimos? Earum, accusantium nemo magnam architecto soluta ea tempore. Doloremque, officia quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati dolores quia aspernatur. Esse, repellat dolores ullam eveniet, aperiam doloribus tempora atque voluptatum quas doloremque explicabo, voluptates ea! Perspiciatis, est? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at aliquam libero. Cumque deserunt aut quisquam est laborum eligendi tempora. Perspiciatis neque dolores mollitia dolorum molestiae, fuga cum consectetur cupiditate? </span>
-            <a id="savoirPlus"  href="/Connection.html">RÉSERVER</a>
-            <form action="index.html">
-                <button  >En savoir plus
-                </button>
-            </form>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/slide3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
         </div>
+        <!-- <div class="slides"><img src="img/slide1.jpg" alt="bel appartement"></div> -->
         <section class="welcomSection">
-            <h1>Beinvenue au le Royal</h1>
-            <figure>
-                <img src="img/welcome.jpg" alt="Bienvenue au Le Royal">
-            </figure>
-            <article>
-                <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ullam ipsam ut ea non eaque cumque, aliquam accusantium assumenda ex dignissimos, similique voluptatem, sequi fugit qui quia sunt recusandae. Possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora commodi cum quia! Quidem, sed explicabo ut voluptates dolores doloremque minima nesciunt veniam aliquam illum. Laboriosam exercitationem minus ipsam neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minima modi corporis eveniet molestiae incidunt ad eaque, deleniti repudiandae, esse ipsa officia, voluptas ex earum asperiores culpa porro fugiat magnam?</span>
-            </article>
-            <form action="index.html">
-                <button  >En savoir plus
-                </button>
-            </form>
-        </section> 
+            <div>
+                <h1>Bienvenue au Le Royal</h1>
+                <figure>
+                    <img src="img/welcome.jpg" alt="Bienvenue au Le Royal">
+                </figure>
+                <article>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore, et, rem officia atque, dolor voluptatibus consequuntur dolorum ipsa nobis voluptate aliquam nesciunt nulla repellat quo fugit iure quaerat officiis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam eos fuga hic, quam amet doloribus dolore dolores eligendi nihil, sit fugit odio repellat consequuntur tempore velit tempora suscipit cupiditate quae. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit ullam ipsam ut ea non eaque cumque, aliquam accusantium assumenda ex dignissimos, similique voluptatem, sequi fugit qui quia sunt recusandae. Possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora commodi cum quia! Quidem, sed explicabo ut voluptates dolores doloremque minima nesciunt veniam aliquam illum. Laboriosam exercitationem minus ipsam neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta minima modi corporis eveniet molestiae incidunt ad eaque, deleniti repudiandae, esse ipsa officia, voluptas ex earum asperiores culpa porro fugiat magnam?</span>
+                </article>
+                <form action="index.html">
+                    <button  >En savoir plus
+                    </button>
+                </form>
+            </div>
+        </section>  
+        
         <section class="decouvrer">
             <div>
                 <h1>DECOUVERT NOTRE HOTEL</h1>
@@ -90,32 +95,36 @@
             </div>
         </section>
         <section class="services">
-            <h1>Nos Service</h1>
-            <div class="figures">
-                <figure>
+            <h2>Nos Service</h2>
+            <div class="figuresDeServices">
+                <div>
                     <a href="#">
                         <img src="img/room.png" alt="Chambres">
+                        <figcaption>Chambres</figcaption>
                     </a>
-                    <figcaption>Chambres</figcaption>
-                </figure>
-                <figure>
+                    
+                </div>
+                <div>
                     <a href="#">
                         <img src="img/restaurant.png" alt="Restaurant">
+                        <figcaption>Restaurant</figcaption>
                     </a>
-                    <figcaption>Restaurant</figcaption>
-                </figure>
-                <figure>
+                    
+                </div>
+                <div>
                     <a href="#">
                         <img  src="img/spa.png" alt="Spa">
+                        <figcaption>Spa</figcaption>
                     </a>
-                    <figcaption>Spa</figcaption>
-                </figure>
-                <figure>
+                    
+                </div>
+                <div>
                     <a href="#">
-                        <img width="100px" src="img/events.png" alt="Événements">
+                        <img src="img/events.png" alt="Événements">
+                        <figcaption>Événements</figcaption>
                     </a>
-                    <figcaption>Événements</figcaption>
-                </figure>
+                    
+                </div>
             </div>
         </section>
         <section class="experience">
@@ -186,5 +195,11 @@
         <p id="important">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
 
     </footer>
+
+    
+
+      <!-- Вариант 1: Bootstrap в связке с Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>

@@ -44,33 +44,32 @@ margin: 1rem;
     
     color: white;
 } */
-.nav{
+.navigation{
     width: 90%;
     margin: auto;
     display: table;
     margin-bottom: 1rem;
 
 }
-.nav ul{
+.navigation ul{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     display: grid;
     justify-content: space-around;
-   -- margin: auto;
     padding: 0px;
 }
-.nav li { 
+.navigation li { 
     list-style: none;
     background-color: #85929e;
     font-family: 'PT Sans Narrow', sans-serif, bold;
     padding: 0px;
     text-align: center;
 }
-.nav li:hover { 
+.navigation li:hover { 
     background-color: #e5e2e2;
     
     
 }
-.nav a{
+.navigation a{
     text-decoration: none;
     display: block;
     color: black;
@@ -89,13 +88,17 @@ margin: 1rem;
     color: white;
 }
 
-.slides{
-    width: 100%;
+main{
+    width: 90%;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+/* .slides{
+    
     text-align: center;
     animation-name:  opacityAnimation;
     animation-duration: 60s;
- 
-    
+    padding-bottom: 1rem ;
     animation-iteration-count: infinite;
     
     --animation-direction: alternate;
@@ -109,65 +112,60 @@ margin: 1rem;
 }
 @keyframes opacityAnimation {
     from {
-        background:no-repeat center/90% url(../img/slide1.jpg);
+        background:no-repeat center/100% url(../img/slide1.jpg);
     }
     30% {
-        background:no-repeat center/90% url(../img/slide1.jpg);
+        background:no-repeat center/100% url(../img/slide1.jpg);
     }
     33%{
-        background:no-repeat center/90% url(../img/slide2.jpg);
+        background:no-repeat center/100% url(../img/slide2.jpg);
     }
     63% {
     
-        background:no-repeat center/90% url(../img/slide2.jpg); 
+        background:no-repeat center/100% url(../img/slide2.jpg); 
     }
     66% {
     
-        background:no-repeat center/90% url(../img/slide3.jpg); 
+        background:no-repeat center/100% url(../img/slide3.jpg); 
     }
 
     97% {
     
-        background:no-repeat center/90% url(../img/slide3.jpg); 
+        background:no-repeat center/100% url(../img/slide3.jpg); 
     }
     to{
-        background:no-repeat center/90% url(../img/slide1.jpg);
+        background:no-repeat center/100% url(../img/slide1.jpg);
     }
-}
-.welcome{
-    font-family: 'Open Sans', sans-serif;
-    font-size: small;
-    padding: 1rem;
-    width: 60%;
-    margin: auto;
-    text-align:justify;
-    overflow: hidden;
-    
-}
-.welcome img{
-    float: left;
-    margin: 0 1rem 0.5rem 0;
-    width: 20%;
-}
+} */
+/* 
 #savoirPlus {
     background-color: #ccb861;
     color: white;
     text-decoration: none;
-}
+} */
 
 
 .welcomSection {
+
     font-family: 'Open Sans', sans-serif;
     font-size: small;
-    width: 60%;
+    --width: 60%;
     text-align:justify;
     margin: auto;
     overflow: hidden;
-    padding: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0.5rem;
+}
+.welcomSection div{
+    width: 70%;
+    margin: auto;
 }
 
 .welcomSection figure{
-    width: 120px;
+    width: 25%;
     float:left;
     margin: 0px;
     padding-right: 10px;
@@ -175,7 +173,7 @@ margin: 1rem;
 }
 
 .welcomSection figure img{
-    width: inherit;
+    width: 100%;
 }
 
 
@@ -190,10 +188,10 @@ margin: 1rem;
     padding: 5px 10px;
 }
 .decouvrer {
-    margin: auto;
+   margin: auto;
     padding-top: 5rem;
     padding-bottom: 5rem;
-    width: 90%;
+    
     text-align: center;
     color: white;
     --filter: brightness(40%);
@@ -201,7 +199,6 @@ margin: 1rem;
     --background-color: rgba(0, 0, 100, 0.5);
     background-position: center;
     background-size: cover;
-
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
 }
 .decouvrer button{
@@ -214,24 +211,43 @@ margin: 1rem;
 }
 .services {
     text-align: center;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
-.figures{
-    width: 90%;
+/* .figuresDeServices{
+    
     display: grid;
     justify-content: space-around;
     margin: auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
+} */
+.figuresDeServices{
+    
+    display: flex;
+    justify-content: space-around;
 }
-.figures img{
+.figuresDeServices div{
+    margin: 1rem;
+
+}
+.figuresDeServices img{
+
     width: 100%;
 }
-.figures figcaption{
+.figuresDeServices a{
+    text-decoration: none;
+    color: black;
     text-align: center;
 }
+
 .experience {
-    width: 90%;
+    overflow: hidden;
     margin: auto;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0.5rem;
 }
 
 .experience h1{
@@ -243,12 +259,14 @@ margin: 1rem;
 }
 .experience video{
     float: right;
-    width: 30%;
+    width: 500px;
+    margin-bottom: 0.5rem;
 }
 .contacter{
     text-align: center;
     width: 50%;
     margin: auto;
+    
 }
 .contacter form{
     text-align: left;
@@ -270,9 +288,13 @@ margin: 1rem;
 
 }
 .map{
-    width: 90%;
+    
     margin: auto;
     text-align: center;
+    border-top: 2px solid #ccc;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
 }
 map iframe{
     width: 100%;

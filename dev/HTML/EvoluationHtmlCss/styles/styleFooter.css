@@ -1,5 +1,6 @@
 footer {
-    background-color: #85929e;;
+    background-color: #85929e;
+    font-family: 'Open Sans', sans-serif;
     color: white;
     text-align: center;
     padding-top: 1rem;
@@ -37,7 +38,7 @@ footer {
     margin: 1rem;
 }
 .wrapper {
-    --display: flex;
+   -- display: flex;
     --justify-content: space-between;
     
 }
@@ -52,7 +53,7 @@ footer {
 }
 
 .reseaux{
-    width: 30%;
+    width: 25%;
     margin: 0px;
     padding: 0px;
     text-align: left;
