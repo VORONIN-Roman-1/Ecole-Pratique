@@ -51,12 +51,28 @@ margin: 1rem;
     margin-bottom: 1rem;
 
 }
+/* @media (min-width: 481px) and (max-width: 767px) {
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+    }
+} */
+@media all and (min-width: 768px) {
+    .navigation ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        display: grid;
+        justify-content: space-around;
+    }
+}
 .navigation ul{
+    padding: 0px;
+}
+/* .navigation ul{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     display: grid;
     justify-content: space-around;
     padding: 0px;
-}
+} */
 .navigation li { 
     list-style: none;
     background-color: #85929e;
@@ -165,7 +181,7 @@ main{
 }
 
 .welcomSection figure{
-    width: 25%;
+    --width: 25%;
     float:left;
     margin: 0px;
     padding-right: 10px;
@@ -173,7 +189,8 @@ main{
 }
 
 .welcomSection figure img{
-    width: 100%;
+    --width: 100%;
+    width: 250px;
 }
 
 
@@ -201,18 +218,26 @@ main{
     background-size: cover;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
 }
+.decouvrer .nofading{
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+}
 .decouvrer button{
     background-color: #ccb861;
     color: white;
    filter: none;
     border: none;
     padding: 5px 10px;
+    margin-top: 5rem;
 
 }
 .services {
     text-align: center;
+    font-weight:bold;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
+    padding-top: 1rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
@@ -224,10 +249,21 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     
 } */
+
+
 .figuresDeServices{
     
     display: flex;
     justify-content: space-around;
+    
+}
+@media all and (max-width: 768px) {
+    .figuresDeServices{
+    
+        flex-direction: column;
+        
+    }
+    
 }
 .figuresDeServices div{
     margin: 1rem;
@@ -246,12 +282,14 @@ main{
 .experience {
     overflow: hidden;
     margin: auto;
+    text-align: justify;
     border-bottom: 2px solid #ccc;
     margin-bottom: 0.5rem;
 }
 
-.experience h1{
+.experience h3{
     text-align: center;
+    
 }
 .experience span{
     color: #ccb861;
@@ -261,6 +299,7 @@ main{
     float: right;
     width: 500px;
     margin-bottom: 0.5rem;
+    margin-left: 1rem;
 }
 .contacter{
     text-align: center;
