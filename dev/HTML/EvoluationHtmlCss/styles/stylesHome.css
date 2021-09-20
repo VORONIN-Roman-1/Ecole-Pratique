@@ -285,9 +285,9 @@ main{
     font-weight:bold;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-    padding-top: 1rem;
+   -- padding-top: 1rem;
     margin-top: 1rem;
-    margin-bottom: 0.5rem;
+
 }
 /* .figuresDeServices{
     
@@ -313,7 +313,8 @@ main{
 }
 @media all and (min-width: 769px) {
     .figuresDeServices div{
-        margin: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 
@@ -332,7 +333,29 @@ main{
     text-align: center;
 }
 
-.experience {
+.experience
+{   display: flex;
+    text-align: justify;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 0.5rem;
+}
+.experience h3{
+    text-align: center;
+    
+}
+.experience span{
+    color: #ccb861;
+    
+}
+.experience video{
+    --float: right;
+   -- width: 500px;
+    --margin-bottom: 0.5rem;
+    margin-left: 1rem;
+}
+/* .experience {
     overflow: hidden;
     margin: auto;
     text-align: justify;
@@ -353,7 +376,7 @@ main{
     width: 500px;
     margin-bottom: 0.5rem;
     margin-left: 1rem;
-}
+} */
 .contacter{
     text-align: center;
     width: 50%;
