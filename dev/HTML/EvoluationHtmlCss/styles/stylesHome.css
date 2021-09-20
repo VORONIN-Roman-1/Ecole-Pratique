@@ -169,11 +169,11 @@ main{
     text-align:justify;
     margin: auto;
     overflow: hidden;
-    padding: 1rem;
+    padding-bottom: 1rem;
     margin-top: 1rem;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 @media all and (min-width: 769px) {
@@ -186,6 +186,9 @@ main{
         float:left;
         margin-right: 1rem;
     } 
+    .welcomSection form{
+        text-align: right; 
+    }
 }
 @media all and (min-width: 481px) and (max-width: 768px) {
     .welcomSection div{
@@ -220,9 +223,7 @@ main{
 }
 
 
-.welcomSection form{
-    text-align: right; 
-}
+
 .welcomSection form button{
     text-align: right; 
     background-color: #ccb861;
@@ -230,34 +231,55 @@ main{
     border: none;
     padding: 5px 10px;
 }
-.decouvrer {
-   margin: auto;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+@media all and (min-width: 769px) {
+    .decouvrer {
+        margin: auto;
+         padding-top: 5rem;
+         padding-bottom: 5rem;
+         text-align: center;
+         color: white;
+         --filter: brightness(40%);
+         --background:no-repeat center/100% url(../img/discover.jpg); 
+         --background-color: rgba(0, 0, 100, 0.5);
+         background-position: center;
+         background-size: cover;
+         background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
+     }
+     .decouvrer button{
+        background-color: #ccb861;
+        color: white;
+        filter: none;
+        border: none;
+        padding: 5px 10px;
+        margin-top: 5rem;
     
-    text-align: center;
-    color: white;
-    --filter: brightness(40%);
-    --background:no-repeat center/100% url(../img/discover.jpg); 
-    --background-color: rgba(0, 0, 100, 0.5);
-    background-position: center;
-    background-size: cover;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
+    }
+    .decouvrer .nofading{
+        width: 90%;
+    }
+}
+@media all and (max-width: 768px) {
+    .decouvrer {
+    margin: auto;
+
+        
+        text-align: left;
+        
+    }
+    .decouvrer button{
+        background-color: #ccb861;
+        color: white;
+       filter: none;
+        border: none;
+    
+    }
 }
 .decouvrer .nofading{
-    width: 90%;
+    --width: 90%;
     text-align: justify;
     margin: auto;
 }
-.decouvrer button{
-    background-color: #ccb861;
-    color: white;
-   filter: none;
-    border: none;
-    padding: 5px 10px;
-    margin-top: 5rem;
 
-}
 .services {
     text-align: center;
     font-weight:bold;
@@ -285,19 +307,24 @@ main{
 }
 @media all and (max-width: 768px) {
     .figuresDeServices{
-    
         flex-direction: column;
-        
     }
     
 }
-.figuresDeServices div{
-    margin: 1rem;
-
+@media all and (min-width: 769px) {
+    .figuresDeServices div{
+        margin: 2rem;
+    }
 }
+
+
 .figuresDeServices img{
 
     width: 100%;
+}
+.figuresDeServices figcaption{
+
+    margin: 1rem;
 }
 .figuresDeServices a{
     text-decoration: none;
