@@ -339,7 +339,22 @@ main{
     padding-bottom: 1rem;
     padding-top: 1rem;
     border-bottom: 2px solid #ccc;
-    margin-bottom: 0.5rem;
+  }
+ @media all and (max-width: 768px) {
+    .experience{
+       flex-direction: column;
+    }
+    .experience video{
+        --float: right;
+       -- width: 500px;
+        --margin-bottom: 0.5rem;
+
+    }
+}
+@media all and (min-width: 769px) {
+    .experience video{
+        margin-left: 1rem;
+    }
 }
 .experience h3{
     text-align: center;
@@ -353,7 +368,7 @@ main{
     --float: right;
    -- width: 500px;
     --margin-bottom: 0.5rem;
-    margin-left: 1rem;
+
 }
 /* .experience {
     overflow: hidden;
