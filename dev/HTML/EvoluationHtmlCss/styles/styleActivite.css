@@ -1,56 +1,20 @@
-.logo{
-    text-align: center;
-    margin: 1rem;
-    
-    }
-    
-    .nav{
-        width: 90%;
-        margin: auto;
-        display: table;
-        margin-bottom: 1rem;
-    
-    }
-    .nav ul{
-        display: table-row;
-    }
-    .nav li { 
-        display: table-cell;
-        background-color: #85929e;
-        font-family: 'PT Sans Narrow', sans-serif, bold;
-        padding: 0px;
-        text-align: center;
-    }
-    .nav li:hover { 
-        background-color: #e5e2e2;
-        
-        
-    }
-    .nav a{
-        text-decoration: none;
-        display: block;
-        color: black;
-        padding: 10px 0px 10px 0px;
-    }
-    
-    #reserver {
-        background-color: #ccb861;
-        color: white;
-    }
-    #reserver:hover {
-        background-color: #baa64e;
-    }
-    #reserver a {
-        
-        color: white;
-    }
 
     main{
         width: 90%;
         margin: auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+    @media all and (max-width: 768px) {
+        .activiteDispo h2{
+            text-align: center;
+        }
+    }
+    .activiteDispo article{
+        text-align: justify;
     }
     .tableActivite{
         text-align: center;
+        
         
     }
     .tableActivite table{

@@ -7,6 +7,41 @@ footer {
     padding-bottom: 0.5rem;
     margin: 0px;
 }
+@media all and (max-width: 768px) {
+    .footerMenuResaux{
+        flex-direction: column;
+    }
+    .footerNav ul{
+        flex-direction: column;
+   } 
+   .reseaux{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    }
+    .wrapper {
+        
+        justify-content:space-around;
+        
+    }
+}
+@media all and (min-width: 769px) {
+    .footerNav li {
+        margin-left: 0.5rem;
+    }
+    .reseaux{
+        width: 170px;
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+    }
+    .wrapper {
+
+        justify-content: space-between;
+        
+    }
+}
 .footerMenuResaux{
     text-align: center;
     display: flex;
@@ -24,10 +59,6 @@ footer {
     justify-content: space-between;
     margin: 0px;
     padding: 0px;
-
-    
-    
-
 } 
 .footerNav a{
     text-decoration: none;
@@ -35,15 +66,15 @@ footer {
 }
 .footerNav li {
     list-style: none;
-    margin: 1rem;
+    
 }
 .wrapper {
-   -- display: flex;
-    --justify-content: space-between;
+    display: flex;
+
     
 }
 .wrapper i {
-    margin-right: 3rem;
+    --margin-right: 3rem;
  }
 .wrapper a i {
  color:white;
@@ -52,12 +83,7 @@ footer {
     clear:both;
 }
 
-.reseaux{
-    width: 25%;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
-}
+
 .reseaux button{
     background-color: #ccb861;
     color: white;
