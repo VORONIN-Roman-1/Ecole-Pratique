@@ -1,106 +1,48 @@
 .logo{
     text-align: center;
     margin: 1rem;
-    
-    }
-    
-    /* .nav{
-        width: 90%;
-        margin: auto;
-        display: table;
-        margin-bottom: 1rem;
-    
-    }
-    .nav ul{
-        display: table-row;
-    }
-    .nav li { 
-        display: table-cell;
-        background-color: #85929e;
-        font-family: 'PT Sans Narrow', sans-serif, bold;
-        padding: 0px;
-        text-align: center;
-    }
-    .nav li:hover { 
-        background-color: #e5e2e2;
-        
-        
-    }
-    .nav a{
-        text-decoration: none;
-        display: block;
-        color: black;
-        padding: 10px 0px 10px 0px;
-    }
-    
-    #reserver {
-        background-color: #ccb861;
-        color: white;
-    }
-    #reserver:hover {
-        background-color: #baa64e;
-    }
-    #reserver a {
-        
-        color: white;
-    } */
-    .navigation{
-        width: 90%;
-        margin: auto;
-        display: table;
-        margin-bottom: 1rem;
-    
-    }
-    /* @media (min-width: 481px) and (max-width: 767px) {
-        .navigation ul {
-            display: flex;
-            flex-direction: column;
-        }
-    } */
-    @media all and (min-width: 769px) {
-        .navigation ul {
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-            display: grid;
-            justify-content: space-around;
-        }
-    }
-    .navigation ul{
-        padding: 0px;
-    }
-    /* .navigation ul{
+}
+.navigation{
+    width: 90%;
+    margin: auto;
+    display: table;
+    margin-bottom: 1rem;
+
+}
+@media all and (min-width: 769px) {
+    .navigation ul {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         display: grid;
         justify-content: space-around;
-        padding: 0px;
-    } */
-    .navigation li { 
-        list-style: none;
-        background-color: #85929e;
-        font-family: 'PT Sans Narrow', sans-serif, bold;
-        padding: 0px;
-        text-align: center;
     }
-    .navigation li:hover { 
-        background-color: #e5e2e2;
-        
-        
-    }
-    .navigation a{
-        text-decoration: none;
-        display: block;
-        color: black;
-        padding: 10px 0px 10px 0px;
-    }
-    
-    #reserver {
-        background-color: #ccb861;
-        color: white;
-    }
-    #reserver:hover {
-        background-color: #baa64e;
-    }
-    #reserver a {
-        
-        color: white;
-    }
+}
+.navigation ul{
+    padding: 0px;
+}
+.navigation li { 
+    list-style: none;
+    background-color: #85929e;
+    font-family: 'PT Sans Narrow', sans-serif, bold;
+    padding: 0px;
+    text-align: center;
+}
+.navigation li:hover { 
+    background-color: #e5e2e2;        
+}
+.navigation a{
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 10px 0px 10px 0px;
+}
+#reserver {
+    background-color: #ccb861;
+    color: white;
+}
+#reserver:hover {
+    background-color: #baa64e;
+}
+#reserver a {
+    color: white;
+}
     

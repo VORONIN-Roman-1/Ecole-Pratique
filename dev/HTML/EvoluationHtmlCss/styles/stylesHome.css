@@ -1,62 +1,8 @@
-
-
 main{
     width: 90%;
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
-/* .slides{
-    
-    text-align: center;
-    animation-name:  opacityAnimation;
-    animation-duration: 60s;
-    padding-bottom: 1rem ;
-    animation-iteration-count: infinite;
-    
-    --animation-direction: alternate;
-}
-
-.slides img{
-    width: 90%;
-
-    opacity: 0.01;
-    
-}
-@keyframes opacityAnimation {
-    from {
-        background:no-repeat center/100% url(../img/slide1.jpg);
-    }
-    30% {
-        background:no-repeat center/100% url(../img/slide1.jpg);
-    }
-    33%{
-        background:no-repeat center/100% url(../img/slide2.jpg);
-    }
-    63% {
-    
-        background:no-repeat center/100% url(../img/slide2.jpg); 
-    }
-    66% {
-    
-        background:no-repeat center/100% url(../img/slide3.jpg); 
-    }
-
-    97% {
-    
-        background:no-repeat center/100% url(../img/slide3.jpg); 
-    }
-    to{
-        background:no-repeat center/100% url(../img/slide1.jpg);
-    }
-} */
-/* 
-#savoirPlus {
-    background-color: #ccb861;
-    color: white;
-    text-decoration: none;
-} */
-
-
 .welcomSection {
 
     font-family: 'Open Sans', sans-serif;
@@ -112,14 +58,9 @@ main{
    --padding-right: 10px;
 
 }
-
 .welcomSection div img{
     width: 100%;
-   -- width: 250px;
 }
-
-
-
 .welcomSection form button{
     text-align: right; 
     background-color: #ccb861;
@@ -130,17 +71,17 @@ main{
 @media all and (min-width: 769px) {
     .decouvrer {
         margin: auto;
-         padding-top: 5rem;
-         padding-bottom: 5rem;
-         text-align: center;
-         color: white;
-         --filter: brightness(40%);
-         --background:no-repeat center/100% url(../img/discover.jpg); 
-         --background-color: rgba(0, 0, 100, 0.5);
-         background-position: center;
-         background-size: cover;
-         background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
-     }
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        text-align: center;
+        color: white;
+        --filter: brightness(40%);
+        --background:no-repeat center/100% url(../img/discover.jpg); 
+        --background-color: rgba(0, 0, 100, 0.5);
+        background-position: center;
+        background-size: cover;
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
+    }
      .decouvrer button{
         background-color: #ccb861;
         color: white;
@@ -156,19 +97,15 @@ main{
 }
 @media all and (max-width: 768px) {
     .decouvrer {
-    margin: auto;
-
-        
+        margin: auto;
         text-align: left;
-        
     }
     .decouvrer button{
         background-color: #ccb861;
         color: white;
-       filter: none;
+        filter: none;
         border: none;
-    
-    }
+     }
 }
 .decouvrer .nofading{
     --width: 90%;
@@ -181,19 +118,10 @@ main{
     font-weight:bold;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-   -- padding-top: 1rem;
+   --padding-top: 1rem;
     margin-top: 1rem;
 
 }
-/* .figuresDeServices{
-    
-    display: grid;
-    justify-content: space-around;
-    margin: auto;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-} */
-
 
 .figuresDeServices{
     
@@ -242,9 +170,8 @@ main{
     }
     .experience video{
         --float: right;
-       -- width: 500px;
+        --width: 500px;
         --margin-bottom: 0.5rem;
-
     }
 }
 @media all and (min-width: 769px) {
@@ -262,32 +189,11 @@ main{
 }
 .experience video{
     --float: right;
-   -- width: 500px;
+   --width: 500px;
     --margin-bottom: 0.5rem;
 
 }
-/* .experience {
-    overflow: hidden;
-    margin: auto;
-    text-align: justify;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 0.5rem;
-}
 
-.experience h3{
-    text-align: center;
-    
-}
-.experience span{
-    color: #ccb861;
-    
-}
-.experience video{
-    float: right;
-    width: 500px;
-    margin-bottom: 0.5rem;
-    margin-left: 1rem;
-} */
 .contacter{
     text-align: center;
     width: 50%;
@@ -326,74 +232,3 @@ map iframe{
     width: 100%;
 }
 
-/* footer {
-    background-color: #85929e;;
-    color: white;
-    text-align: center;
-    padding-top: 1rem;
-    margin: 0px;
-}
-.footerMenuResaux{
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0px;
-    
-}
-.footerNav{
-    --width: 60%;
-}
-.footerNav ul{
-     display: flex;
-    justify-content: space-between;
-    margin: 0px;
-    padding: 0px;
-
-    
-    
-
-} 
-.footerNav a{
-    text-decoration: none;
-    color: #fff;
-}
-.footerNav li {
-    list-style: none;
-    margin: 1rem;
-}
-.wrapper {
-    --display: flex;
-    --justify-content: space-between;
-    
-}
-.wrapper i {
-    margin-right: 3rem;
- }
-.wrapper a i {
- color:white;
- }
-.wrapper::after{
-    clear:both;
-}
-
-.reseaux{
-    width: 30%;
-    margin: 0px;
-    padding: 0px;
-    text-align: left;
-}
-.reseaux button{
-    background-color: #ccb861;
-    color: white;
-    filter: none;
-    border: none;
-    padding: 5px 10px;
-
-}
-#important{
-    font-size: xx-small;
-} */
-
-      

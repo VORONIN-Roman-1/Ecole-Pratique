@@ -2,9 +2,19 @@
     main{
         width: 90%;
         margin: auto;
+        font-family: 'Open Sans', sans-serif;
+    }
+    @media all and (max-width: 768px) {
+        .activiteDispo h2{
+            text-align: center;
+        }
+    }
+    .activiteDispo article{
+        text-align: justify;
     }
     .tableActivite{
         text-align: center;
+        
         
     }
     .tableActivite table{
