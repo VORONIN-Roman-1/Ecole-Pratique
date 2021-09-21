@@ -3,19 +3,22 @@ main{
     margin: auto;
     font-family: 'Open Sans', sans-serif;
 }
+#carouselExampleControls{
+
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 1rem;
+}
+
 .welcomSection {
 
-    font-family: 'Open Sans', sans-serif;
-    font-size: small;
-    --width: 60%;
+    
     text-align:justify;
     margin: auto;
     overflow: hidden;
     padding-bottom: 1rem;
     margin-top: 1rem;
-    border-top: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 1rem;
+
+    --margin-bottom: 1rem;
 }
 
 @media all and (min-width: 769px) {
@@ -51,12 +54,7 @@ main{
     }
 }
 .welcomSection div{
-    --width: 25%;
-    --float:left;
     text-align: center;
-    
-   --padding-right: 10px;
-
 }
 .welcomSection div img{
     width: 100%;
@@ -68,6 +66,12 @@ main{
     border: none;
     padding: 5px 10px;
 }
+.borderSections{
+    width: 100%;
+
+    border-top: 2px solid #ccc;
+
+}
 @media all and (min-width: 769px) {
     .decouvrer {
         margin: auto;
@@ -75,9 +79,6 @@ main{
         padding-bottom: 5rem;
         text-align: center;
         color: white;
-        --filter: brightness(40%);
-        --background:no-repeat center/100% url(../img/discover.jpg); 
-        --background-color: rgba(0, 0, 100, 0.5);
         background-position: center;
         background-size: cover;
         background-image:  linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(../img/discover.jpg);
@@ -98,17 +99,19 @@ main{
 @media all and (max-width: 768px) {
     .decouvrer {
         margin: auto;
-        text-align: left;
+    }
+    .decouvrer h2{
+        text-align: center;
     }
     .decouvrer button{
         background-color: #ccb861;
         color: white;
         filter: none;
         border: none;
+        text-align: left;
      }
 }
 .decouvrer .nofading{
-    --width: 90%;
     text-align: justify;
     margin: auto;
 }
@@ -118,7 +121,6 @@ main{
     font-weight:bold;
     border-top: 2px solid #ccc;
     border-bottom: 2px solid #ccc;
-   --padding-top: 1rem;
     margin-top: 1rem;
 
 }
@@ -168,31 +170,22 @@ main{
     .experience{
        flex-direction: column;
     }
-    .experience video{
-        --float: right;
-        --width: 500px;
-        --margin-bottom: 0.5rem;
-    }
 }
 @media all and (min-width: 769px) {
     .experience video{
         margin-left: 1rem;
+    }
+    .experience span{
+        color: #ccb861;
+        
     }
 }
 .experience h3{
     text-align: center;
     
 }
-.experience span{
-    color: #ccb861;
-    
-}
-.experience video{
-    --float: right;
-   --width: 500px;
-    --margin-bottom: 0.5rem;
 
-}
+
 
 .contacter{
     text-align: center;
