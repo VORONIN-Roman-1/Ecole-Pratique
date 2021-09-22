@@ -1,4 +1,4 @@
-<%@page import="com.cci.ep.calcul.CalculMetier" %>
+<%@page import="com.cci.ep.calcul.*" %>
 <%
 double a = 0;
 double b = 0;
