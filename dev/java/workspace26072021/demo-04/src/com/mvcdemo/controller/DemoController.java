@@ -9,11 +9,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-@RequestMapping("hello")
+//@RequestMapping("hello")
 public class DemoController {
 	@GetMapping("/")
 	public String showHome() {
 		return "home";
+	}
+	@GetMapping("menu")
+	public String showMenu() {
+		return "main-menu";
 	}
 	@GetMapping ("getSalutationForm")
 	public String afficheSalutationForm() {
