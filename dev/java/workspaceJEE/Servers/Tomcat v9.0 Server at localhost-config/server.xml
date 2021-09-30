@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="HelloWorld" path="/HelloWorld" reloadable="true" source="org.eclipse.jst.jee.server:HelloWorld"/><Context docBase="HelloWorldServlet" path="/HelloWorldServlet" reloadable="true" source="org.eclipse.jst.jee.server:HelloWorldServlet"/><Context docBase="Utilisateur" path="/Utilisateur" reloadable="true" source="org.eclipse.jst.jee.server:Utilisateur"/><Context docBase="HelloWorldJSP" path="/HelloWorldJSP" reloadable="true" source="org.eclipse.jst.jee.server:HelloWorldJSP"/><Context docBase="UtilisateurJSP" path="/UtilisateurJSP" reloadable="true" source="org.eclipse.jst.jee.server:UtilisateurJSP"/><Context docBase="TransmissionDonnees" path="/TransmissionDonnees" reloadable="true" source="org.eclipse.jst.jee.server:TransmissionDonnees"/><Context docBase="ClientCommande" path="/ClientCommande" reloadable="true" source="org.eclipse.jst.jee.server:ClientCommande"/><Context docBase="HelloWorldJSTL" path="/HelloWorldJSTL" reloadable="true" source="org.eclipse.jst.jee.server:HelloWorldJSTL"/><Context docBase="FormulaireGet" path="/FormulaireGet" reloadable="true" source="org.eclipse.jst.jee.server:FormulaireGet"/><Context docBase="WebCalcul" path="/WebCalcul" reloadable="true" source="org.eclipse.jst.j2ee.server:WebCalcul"/></Host>
+      </Host>
     </Engine>
   </Service>
 </Server>
