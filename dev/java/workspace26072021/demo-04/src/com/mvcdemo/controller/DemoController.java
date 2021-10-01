@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class DemoController {
 	@GetMapping("/")
 	public String showHome() {
-		return "home";
+		return "main-menu";
 	}
 	@GetMapping("menu")
 	public String showMenu() {

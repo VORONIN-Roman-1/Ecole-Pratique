@@ -6,8 +6,9 @@
 <meta charset="UTF-8">
 <title> Utilisateur - Vue</title>
 </head>
-<body>
-L'utilisateur est vérifié : ${utilisateur.prenom} 
-${utilisateur.nom}
+<body>L'utilisateur est verifié <br>
+nom: ${utilisateur.prenom <br>
+prénom: ${utilisateur.nom} <br>
+pays: ${utilisateur.pays}
 </body>
 </html>
