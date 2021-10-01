@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>Welcome to main menu ! </h2>
-<a href="getSaluttationForm">Hello Spring MVC Form</a>
+<a href="afficheUtilisateurForm">Hello Spring MVC Form</a>
 
 </body>
 </html>
