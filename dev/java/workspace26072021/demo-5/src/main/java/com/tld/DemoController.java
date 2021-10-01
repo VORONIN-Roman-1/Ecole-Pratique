@@ -25,7 +25,7 @@ public class DemoController {
 	@GetMapping("/")
 	public String showHome() {
 		System.out.println("home is responding");
-		return "home";
+		return "hello";
 	}
 
 	@GetMapping("/getPersonnageForm")
