@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
-//@RequestMapping("hello")
-public class DemoController {
+@RequestMapping("hello2")
+public class DemoController2 {
 
 	@GetMapping("/")
 	public String showHome() {
@@ -22,12 +22,6 @@ public class DemoController {
 	public String afficheSalutationForm() {
 		
 		return "saluttation-form";
-	}
-	@GetMapping("afficheFormulaire")
-	public String afficheFormulaire(Model leModel) {
-		leModel.addAttribute("utilisateur", new Utilisateur());
-		return "utilisateur-form";
-
 	}
 	@GetMapping("postSalutationForm")
 	public String receptionneSalutationForm(@RequestParam("userName") String nom, Model model) {
