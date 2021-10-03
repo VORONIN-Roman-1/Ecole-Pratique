@@ -1,0 +1,11 @@
+.main{
+    display: flex;
+    background-color: aquamarine;
+    //text-align: center;
+}
+.aside {
+    float: left;
+}
+.content {
+    text-align: center;
+}
