@@ -5,9 +5,9 @@ import javax.validation.constraints.Size;
 
 public class Personnage {
 	@NotNull( message="champ obligatoire")
-	@Size(min=1, message="nom obligatoire")
+	@Size(min=5, message="nom obligatoire")
 	private String nom;
-	@Size(max = 19)
+	@Size(max = 8)
 	private String prenom;
 	private String genre;
 	public String getNom() {
