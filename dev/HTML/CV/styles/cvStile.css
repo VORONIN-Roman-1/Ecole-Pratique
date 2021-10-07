@@ -1,17 +1,27 @@
 .main{
+    text-align: justify;
     display: flex;
     background-color: aquamarine;
     font-family: 'Open Sans', sans-serif;
     /* text-align: center; */
 }
+.head {
+    text-align: center;
+    /* font-family: 'PT Sans Narrow', sans-serif, bold; */
+}
+.head  h1,h2 {
+    margin: 0px;
+    /* font-family: 'PT Sans Narrow', sans-serif, bold; */
+}
 .aside {
-    width: 300px;
+    width: 250px;
     
 }
 .content {
     text-align: center;
 }
 .contact{
+    width: inherit;
     text-align: center;
 }
 .contact ul{
@@ -32,6 +42,13 @@
 }
 .competences div{
     margin: 1rem;
+    display: inline-block;
+}
+.langues table{
+    margin: 1rem;
+}
+.langues {
+ display: inline-block;
 }
 .photo{
     text-align: center;
@@ -44,4 +61,13 @@
     width: 200px;
     /* width: inherit; */
     
+}
+.formation h3,p{
+    margin: 0px;
+}
+.experience h3, p{
+    margin: 0px;
+}
+article {
+    margin: 1rem;
 }
