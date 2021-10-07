@@ -1,10 +1,17 @@
 package com.tld;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -14,9 +21,16 @@ public class Voiture {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private Long id;
-	@Column(name = "modele_name")
+	// @Column(name = "modele_name")
 	private String modele;
+	@Column
 	private String immatriculation;
+	@OneToOne(cascade = CascadeType.ALL)
+	@JoinColumn(name = "moteur_id")
+	private Moteur moteur;
+	@OneToMany(mappedBy = "voiture", cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.DETACH,
+			CascadeType.REFRESH })
+	private List<Intervention> interventions;
 
 	public Voiture(Long id, String modele, String immatriculation) {
 		this.id = id;
@@ -33,6 +47,31 @@ public class Voiture {
 	}
 
 //getters & setters
+	// méthode pratique pour les relations bi directionnelles oneToMany
+	public void add(Intervention intervention) {
+		if (interventions == null) {
+			interventions = new ArrayList<>();
+		}
+		interventions.add(intervention);
+		intervention.setVoiture(this);
+	}
+
+	public List<Intervention> getInterventions() {
+		return interventions;
+	}
+
+	public void setInterventions(List<Intervention> interventions) {
+		this.interventions = interventions;
+	}
+
+	public String getImmatriculation() {
+		return immatriculation;
+	}
+
+	public void setImmatriculation(String immatriculation) {
+		this.immatriculation = immatriculation;
+	}
+
 	public Long getId() {
 		return id;
 	}
@@ -49,12 +88,12 @@ public class Voiture {
 		this.modele = modele;
 	}
 
-	public String getImmat() {
-		return immatriculation;
+	public Moteur getMoteur() {
+		return moteur;
 	}
 
-	public void setImmat(String immat) {
-		this.immatriculation = immat;
+	public void setMoteur(Moteur moteur) {
+		this.moteur = moteur;
 	}
 
 	@Override
