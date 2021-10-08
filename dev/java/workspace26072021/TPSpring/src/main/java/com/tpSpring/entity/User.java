@@ -3,7 +3,7 @@ package com.tpSpring.entity;
 import javax.persistence.Entity;
 
 @Entity
-public class Utilisateur {
+public class User {
 	private Long id;
 	private String prenom;
 	private String nom;
