@@ -10,18 +10,21 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.tld.dao.UserDao;
 import com.tld.entities.User;
+import com.tld.service.UserService;
 
 @Controller 
 public class UserController {
 
 	
-	@Autowired
-	private UserDao userDao;
+//	@Autowired
+//	private UserDao userDao;
 	
+	@Autowired
+	private UserService userService;
 	
 	@GetMapping("/users/list")
 	public String listAllUsers( Model theModel) {
-		List<User> users=  userDao.getAllUsers();
+		List<User> users=  userService.getAllUsers();
 		theModel.addAttribute("users", users);
 		
 		for(int i =0 ; i<users.size();i++) {

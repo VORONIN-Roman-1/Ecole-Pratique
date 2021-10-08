@@ -20,7 +20,7 @@ public class UserDaoImpl implements UserDao {
 	private SessionFactory sessionFactory;
 	
 	@Override
-	@Transactional
+	//@Transactional
 	public List<User> getAllUsers() {
 		Session session = sessionFactory.getCurrentSession();
 		
