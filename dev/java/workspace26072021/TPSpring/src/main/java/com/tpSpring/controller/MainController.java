@@ -16,11 +16,11 @@ public class MainController {
 	@Autowired
 	private UserDao userDao;
 	
-	@GetMapping("/")
-	public String showHome() {
-		System.out.println("home is responding");
-		return "list-users";
-	}
+//	@GetMapping("/")
+//	public String showHome() {
+//		System.out.println("home is responding");
+//		return "list-users";
+//	}
 
 	@GetMapping("/users/list")
 	public String listAllUsers( Model theModel) {

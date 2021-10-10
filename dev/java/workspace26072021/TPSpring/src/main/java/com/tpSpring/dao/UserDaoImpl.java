@@ -24,15 +24,7 @@ public class UserDaoImpl implements UserDao {
 		Session session = sessionFactory.getCurrentSession();
 		Query<User> query = session.createQuery("from User", User.class);
 		List<User> users = query.getResultList();
-		
-		
-		System.out.println("UUUSERS");
-		for(int i =0 ; i<users.size();i++) {
-			System.out.println( users.get(i));
-		}
-		System.out.println("----");
-		
-		
+	
 		return users;
 	}
 }
