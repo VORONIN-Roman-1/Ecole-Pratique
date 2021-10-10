@@ -35,6 +35,7 @@
 						<td>${temp.lastName}</td>
 						<td>${temp.email}</td>
 					</tr>
+					<td> <a href="${pageContext.request.contextPath}/users/montrerFormulaireEdition?id=${temp.id}">Update</a>
 				</c:forEach>
 		
 			</table>

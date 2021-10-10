@@ -20,6 +20,7 @@
 		<h3> Sauvegarder Utilisateur</h3>
 	
 		<form:form action="sauvegarderUser" modelAttribute="user" method="POST">
+		<form:hidden path="id" />
 			<table>
 				<tbody>
 					<tr>

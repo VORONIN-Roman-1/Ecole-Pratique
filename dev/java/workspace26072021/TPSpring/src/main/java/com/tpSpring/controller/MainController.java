@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.tpSpring.entity.User;
 import com.tpSpring.service.UserService;
@@ -47,6 +48,14 @@ public class MainController {
 	public String saveUser(@ModelAttribute ("user" ) User user) {
 		userService.saveUser(user);
 		return "redirect:/users/list";
+		
+	}
+	@GetMapping("/montrerFormulaireEdition")
+	public  String montrerFormulaireEdition(@RequestParam("id") int id, Model model) {
+		
+		User userToEdit = userService.getUser(id);
+		model.addAttribute("user", userToEdit);
+		return "form-user";
 		
 	}
 	
