@@ -17,7 +17,8 @@
 			<h2>CRM - gestionnaire d'Utilisateur</h2>
 		</div>
 	</div>
-	
+	<input type="button" value="Ajout User"
+	onclick="window.location.href='montrerFormulaireCreate'; return false;" class="add-button"/>
 	<div id="container">
 		<div id="content">
 		<!-- ajouter le tableau html ici -->

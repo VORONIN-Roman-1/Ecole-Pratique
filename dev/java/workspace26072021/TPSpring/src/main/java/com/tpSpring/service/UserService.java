@@ -7,6 +7,7 @@ import com.tpSpring.entity.User;
 public interface UserService {
 
 	public List<User> getUsers();
-
+	
+	public void saveUser(User user);
 	
 }
