@@ -7,14 +7,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.tpSpring.dao.UserDao;
 import com.tpSpring.entity.User;
+import com.tpSpring.service.UserService;
 
 
 @Controller
 public class MainController {
 	@Autowired
-	private UserDao userDao;
+	private UserService userService;
 	
 //	@GetMapping("/")
 //	public String showHome() {
@@ -24,7 +24,7 @@ public class MainController {
 
 	@GetMapping("/users/list")
 	public String listAllUsers( Model theModel) {
-		List<User> users=  userDao.getAllUsers();
+		List<User> users=  userService.getUsers();
 		theModel.addAttribute("users", users);
 		
 		for(int i =0 ; i<users.size();i++) {

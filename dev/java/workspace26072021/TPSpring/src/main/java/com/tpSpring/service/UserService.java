@@ -1,10 +1,12 @@
-package com.tpSpring.dao;
+package com.tpSpring.service;
 
 import java.util.List;
 
 import com.tpSpring.entity.User;
 
-public interface UserDao {
+public interface UserService {
 
 	public List<User> getUsers();
+
+	
 }
