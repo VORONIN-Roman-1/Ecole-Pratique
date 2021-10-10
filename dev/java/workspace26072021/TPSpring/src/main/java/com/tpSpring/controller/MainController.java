@@ -58,5 +58,11 @@ public class MainController {
 		return "form-user";
 		
 	}
+	@GetMapping("/deleteById")
+	public String deleteUser (@RequestParam ("id") int id ) {
+		userService.delete(id);
+		
+		return "redirect:/users/list";
+	}
 	
 }

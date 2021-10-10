@@ -27,15 +27,26 @@
 					<th>FirstName</th>
 					<th>LastName</th>
 					<th>Email</th>
+					<th>Action</th>
 				</tr>
 		
 				<c:forEach var="temp" items="${users}">
+			  		<c:url var="deleteLien" value="/users/deleteById">
+						<c:param name="id" value="${temp.id}"/>
+					</c:url> 
 					<tr>
 						<td>${temp.firstName}</td>
 						<td>${temp.lastName}</td>
 						<td>${temp.email}</td>
-					</tr>
-					<td> <a href="${pageContext.request.contextPath}/users/montrerFormulaireEdition?id=${temp.id}">Update</a>
+				 			
+				<td> <a href="${pageContext.request.contextPath}/users/montrerFormulaireEdition?id=${temp.id}">Update</a>
+				     <td>
+				      <a href="${deleteLien}"
+				     onclick="if(!(confirm('Souhaitez-vous réellement supprimer cet Utilisateur ?'))) return false">
+				     
+				      Delete</a> 
+				     </td>	
+				</tr>
 				</c:forEach>
 		
 			</table>

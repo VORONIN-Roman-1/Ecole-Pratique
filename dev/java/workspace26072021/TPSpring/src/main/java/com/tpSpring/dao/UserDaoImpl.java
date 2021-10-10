@@ -40,5 +40,14 @@ public class UserDaoImpl implements UserDao {
 		Session session = sessionFactory.getCurrentSession();
 		return session.get(User.class, id);
 	}
+	@Override
+	public void delete(int id) {
+		Session session = sessionFactory.getCurrentSession();
+		Query query= session.createQuery("delete from User where id=:unId");
+		query.setParameter("unId", id);
+		query.executeUpdate();
+		
+		
+	}
 	
 }
