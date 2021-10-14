@@ -35,5 +35,11 @@ public class Employe {
 	}
 	public Employe() {
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Employe";
+	}
+	
 	
 }
