@@ -1,0 +1,12 @@
+{
+  "moteur" : {
+    "cilindre" : 400
+  },
+  "dateCreation" : 581551200000,
+  "vitesseMax" : 290,
+  "marque" : "Renaut",
+  "modele" : "S",
+  "modeles" : "R",
+  "gabarite" : [ 4.5, 3.8, 7.5 ],
+  "usines" : [ "Renaut France", "Dacia Russie" ]
+}
