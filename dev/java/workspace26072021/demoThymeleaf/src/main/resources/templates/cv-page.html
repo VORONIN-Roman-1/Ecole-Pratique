@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+Competence 
+<table class="table table-bordered 
+table-striped">
+<tbody>
+<tr th:each="competence : ${competences}">
+<td th:text="${competence.nom}" />
+<td th:text="${competence.picture}" />
+<td th:text="${competence.level}" />
+</tr>
+</tbody>
+</table>
+Experience 
+<table class="table table-bordered table-striped">
+<tbody>
+<tr th:each="experience : ${experiences}">
+<td th:text="${experience.entrepriseName}" />
+<td th:text="${experience.dateDebut}" />
+<td th:text="${experience.dateFin}" />
+<td th:text="${experience.role}" />
+</tr>
+</tbody>
+</table>
+Formations 
+<table class="table table-bordered table-striped">
+<tbody>
+<tr th:each="formation : ${formations}">
+<td th:text="${formation.name}" />
+<td th:text="${formation.dateDebut}" />
+<td th:text="${formation.dateFin}" />
+<td th:text="${formation.intitule}" />
+<td th:text="${formation.niveauEtude}" />
+</tr>
+</tbody>
+</table>
+</body>
+</html>
+

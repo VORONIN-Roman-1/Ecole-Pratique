@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Message Directory</title>
+</head>
+<body>
+	<h3>Message Directory</h3>
+	<hr>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>Titre</th>
+				<th>Content</th>
+				<th>Email</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="tempMessage : ${messages}">
+				<td th:text="${tempMessage.titre}" />
+				<td th:text="${tempMessage.content}" />
+				<td th:text="${tempMessage.signature}" />
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -7,13 +7,14 @@ import javax.persistence.EntityManager;
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.ecole.crudapidemo.entity.Message;
 
 @Repository
-public class MessageDaoHibernateImpl implements MessageDao {
+public class MessageDaoHibernateImpl implements JpaRepository<T, ID> {
 	private EntityManager entityManager;
 
 	@Autowired

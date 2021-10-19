@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<!-- référencer le fichier CSS-->
+<link rel="stylesheet" th:href="@{/css/mycss.css}" />
+</head>
+<body>
+<p th:text="'Time on the server is ' + ${dateDuJour}" />
+<p th:text="'Time on the server is ' + ${dateDuJour}" class="mystyle"/>
+<button type="button" class="btn btn-primary"
+th:text="'Time on the server is ' + ${dateDuJour}" >
+<span class="badge">7</span>
+</button>
+</body>
+</html>
