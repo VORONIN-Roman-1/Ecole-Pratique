@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <a href="http://google.com" id="link">Google pour les enfants</a>
+    <script>
+    function linkHandler(e){
+         
+        var date = new Date();
+        var hour = date.getHours();
+        console.log(hour);
+        if(hour>20){
+             
+            e.preventDefault();
+            var newDiv = document.createElement("div");
+            newDiv.innerHTML = "<h1>C'est l'heure de se coucher!</h1>";
+            document.getElementById("link").parentElement.appendChild(newDiv);
+        }
+    }
+    var link = document.getElementById("link");
+    link.addEventListener("click", linkHandler);
+    </script>
+</body>
+</html>
