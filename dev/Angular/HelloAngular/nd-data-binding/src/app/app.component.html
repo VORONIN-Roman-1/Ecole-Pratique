@@ -1,0 +1,24 @@
+<h1>Hello g{{firstname}} {{name}} avec tete {{color}}. Qui habite {{maison.id}}</h1>
+   <p #p3 [title]= "maison.type" > {{p3.title}}</p>
+   <p [style.color]="color" [textContent]="name" align="right" [attr.align]="position">fdgf</p>
+   <p align="right">...</p>
+
+   <h1>titre</h1>
+<div *ngIf="isSpecial"> tada isSpecial == true 
+dans la classe ts </div>
+<ul *ngIf="isSpecial!=true">
+    <li>s'affiche si isSpecial !=true </li>
+    <li>s'affiche si isSpecial !=true</li>
+    <li>s'affiche si isSpecial !=true </li>
+</ul>
+<div> {{count}} </div>
+<div *ngIf="count>2"> if count >2 </div>
+
+<h1>titre</h1>
+<div *ngIf="isSpecial"> tada isSpecial == true dans 
+la classe ts </div>
+<ul >
+    <li *ngFor="let month of months"> {{month}}</li>
+     
+</ul>
+<span *ngFor="let day of days"> {{day}}</span>

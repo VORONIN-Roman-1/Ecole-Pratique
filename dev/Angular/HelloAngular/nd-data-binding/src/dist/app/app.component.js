@@ -15,11 +15,23 @@ var AppComponent = /** @class */ (function () {
         this.localPath = "assets/images/angular_logo.png";
         this.urlPath = "https://sensorstechforum.com/wp-content/uploads/2016/10/linuxubuntu-vulnerabilities-stforum.png";
         this.isClient = true;
+        this.age = 33;
+        this.majeur = true;
+        this.maison = { id: 1, type: 'individuel' };
+        this.isSpecial = true;
+        this.count = 2;
+        // TypeScript Arrays
+        this.months = ["January", "Feburary", "March", "April", 5,
+            "June", "July", "August", "September",
+            'O', "November", "December"];
+        this.days = ["Lundi", "Mardi", "Mercredi", "Jeudi",
+            "Vendredi",
+            "Samedi", "Dimanche"];
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'root',
-            // template: `<h1>Hello {{name}}</h1>`,
+            //  template: `<h1>Hello g{{firstname}} {{name}} avec tete {{color}}. Qui habite {{maison.id}}</h1>`
             templateUrl: './app/app.component.html',
             styleUrls: ["./app/app.component.css"]
         })
