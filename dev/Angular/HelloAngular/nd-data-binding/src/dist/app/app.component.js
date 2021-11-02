@@ -9,6 +9,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
+        // employes:Employe[];
+        // ngOnInit(): void {
+        //   this.employes=EMPLOYES;
+        // } 
         this.firstname = "Mr";
         this.name = 'Smith';
         this.color = 'red';
@@ -27,7 +31,27 @@ var AppComponent = /** @class */ (function () {
         this.days = ["Lundi", "Mardi", "Mercredi", "Jeudi",
             "Vendredi",
             "Samedi", "Dimanche"];
+        this.value = 'Event marche';
+        this.value2 = '';
+        this.entry = '';
+        this.employes = [{ "id": 1, "level": 3, "seniority": 8, "name": "Dupont", "picture": "assets/photos/photo01.jpg", "roles": ["architect"], "birthDate": new Date("1984-05-16") },
+            { "id": 2, "level": 2, "seniority": 3, "name": "Rocriguez", "picture": "assets/photos/photo02.jpg", "roles": ["lead dev"], "birthDate": new Date("1999-12-12") },
+            { "id": 3, "level": 0, "seniority": 1, "name": "Rocriguez", "picture": "assets/photos/photo03.png", "roles": ["lead dev"], "birthDate": new Date("2000-10-12") }
+        ];
     }
+    AppComponent.prototype.onClick = function () { console.log("Click !"); };
+    AppComponent.prototype.onKey = function (event) {
+        this.value = 'Bonjour ' + event.target.value;
+    };
+    AppComponent.prototype.onKeyw = function (event) {
+        this.value2 = 'Bonjour ' + event.target.value;
+    };
+    AppComponent.prototype.onKey3 = function (value) {
+        this.value = 'Bonjour ' + value;
+    };
+    AppComponent.prototype.onBlur = function (value) {
+        this.entry = 'Blur = ' + value;
+    };
     AppComponent = __decorate([
         core_1.Component({
             selector: 'root',
