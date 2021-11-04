@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { LANGAGES } from './LANGAGES';
 import { Langage } from './Langage';
+import { mdiLanguageJava } from '@mdi/js';
 
 @Component({
   selector: 'app-root',

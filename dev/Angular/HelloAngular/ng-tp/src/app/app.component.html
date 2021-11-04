@@ -1,7 +1,24 @@
 
-<div *ngFor="let langage of langages">
-    <h3> {{langage.title}}</h3>
-    <img [src]="langage.icon" alt="">
-    <span> {{langage.niveau}}</span>
-    <span> {{langage.description}}</span>
-</div>
+<table class="striped centered">
+    <thead>
+      <tr>
+          <th>Title</th>
+          <th>Photo</th>
+          <th>Niveau</th>
+          <th>Description</th>
+      </tr>
+    </thead>
+
+    <tbody  >
+      <tr *ngFor="let langage of langages">
+        <td>{{langage.title}}</td>
+        <td><img [src]="langage.icon" style="width: 100px;" alt=""></td>
+        <td>{{langage.niveau}}</td>
+        <td>{{langage.description}}</td>
+      </tr>
+   </tbody>
+  </table>
+  <i class="material-icons">javascript</i>
+  <span class="iconify" data-icon="mdi:language-java" style="font-size: 100px;"></span>
+  <span class="iconify" data-icon="mdi:language-javascript" style="font-size: 100px;"></span>
+  <span class="iconify" data-icon="mdi:language-python" style="font-size: 100px;"></span>
