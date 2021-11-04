@@ -1,1 +1,7 @@
-<span>Java</span>
+
+<div *ngFor="let langage of langages">
+    <h3> {{langage.title}}</h3>
+    <img [src]="langage.icon" alt="">
+    <span> {{langage.niveau}}</span>
+    <span> {{langage.description}}</span>
+</div>
