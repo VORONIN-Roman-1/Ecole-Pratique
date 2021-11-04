@@ -1,0 +1,56 @@
+<!-- <h1>Hello g{{firstname}} {{name}} avec tete {{color}}. Qui habite {{maison.id}}</h1>
+   <p #p3 [title]= "maison.type" > {{p3.title}}</p>
+   <p [style.color]="color" [textContent]="name" align="right" [attr.align]="position">fdgf</p>
+   <p align="right">...</p>
+
+   <h1>titre</h1>
+<div *ngIf="isSpecial"> tada isSpecial == true 
+dans la classe ts </div>
+<ul *ngIf="isSpecial!=true">
+    <li>s'affiche si isSpecial !=true </li>
+    <li>s'affiche si isSpecial !=true</li>
+    <li>s'affiche si isSpecial !=true </li>
+</ul>
+<div> {{count}} </div>
+<div *ngIf="count>2"> if count >2 </div>
+
+<h1>titre</h1>
+<div *ngIf="isSpecial"> tada isSpecial == true dans 
+la classe ts </div>
+<ul >
+    <li *ngFor="let month of months"> {{month}}</li>
+     
+</ul>
+<span *ngFor="let day of days"> {{day}}</span> -->
+
+
+<h1>event binding</h1>
+
+
+<div (click)="onClick()" style="border:1px solid black; 
+width:150px; height:150px; background-color: aqua;" >
+zone de detection d'un clic dans la vue
+</div>
+
+<input (keyup)="onKey($event)"
+style=" width:300px; height:100px; background-color: blueviolet;">
+<p> {{ value }}</p>
+<!-- <input #box (keyup)="0"> -->
+<input #box (keyup)="onKey3(box.value)">
+<p> {{ box.value }}</p>
+
+
+<h3>blur event: </h3>
+<input #box2
+(blur)="onBlur(box2.value)" >
+<p>onKey() event : {{ entry }}</p>
+<p>template reference: 
+{{ box2.value }}</p>
+
+
+<p *ngFor="let employe of employes" style="border:1px solid black;" >
+    <span >{{employe.id}} </span> <br>
+    <span (keyup)="onKey($event)">{{employe.name}} </span><br>
+    <img src="{{employe.picture}}" width="100 px" height="100px"/> <br>
+    <span> {{employe.birthDate}}</span>
+</p>
