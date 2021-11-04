@@ -1,0 +1,19 @@
+<h1 class='center'>Directive d'attribut (v1)</h1>
+    <div class='container'>
+        <div class="row" style="background-color: aqua;">
+            <div *ngFor='let employe of employes' class="col s6 m4">
+                <div class="card horizontal" (click)="selectEmploye(employe)" employePreSelect="red" >
+                    <div class="card-image">
+                        <img [src]="employe.picture" style="width: 100px;">
+                        <span>{{employe.name}}</span>
+                    </div>
+                    <div class="card-stacked">
+                        <div class="card-content">
+                            <p><small>{{employe.birthDate}}</small></p>
+                            <p>I am a very simple card. details to display here.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

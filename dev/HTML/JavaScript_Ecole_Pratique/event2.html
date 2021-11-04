@@ -11,10 +11,15 @@
     </style>
 </head>
 <body>
-<div id="rect" onclick="handler(event)"></div>
+<div id="rect" onclick="handler(event); handler2(event)"></div>
 <script>
 function handler(e){
     alert(e.type); 
+}
+function handler2(e){
+    var newNode = document.createElement("p");
+    newNode.textContent = "Clicked";
+    document.body.appendChild(newNode);
 }
 </script>
 </body>
