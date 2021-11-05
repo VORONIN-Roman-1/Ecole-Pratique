@@ -1,20 +1,7 @@
-<h1 class='center'>Directive d'attribut (v1)/h1>
-    <div class='container'>
-    <div class="row">
-    <div *ngFor='let employe of employes' class="col s6 m4">
-     <div class="card horizontal" (click)="selectEmploye(employe)" employePreSelect>
-    <div class="card-image">
-    <img [src]="employe.picture">
-    <span >{{employe.name}}</span>
-    </div>
-    <div class="card-stacked">
-    <div class="card-content">
-    <p><small>{{employe.birthDate}}</small></p>
-    <p>I am a very simple card. details to display here.</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    
+<p *ngFor="let employe of employes" style="border:1px solid black;" >
+    <span >{{employe.id}} </span> <br>
+    <span >{{employe.name}} </span><br>
+    <img src="{{employe.picture}}" width="100 px" height="100px" (click)="selectEmploye(employe)"/> <br>
+    <span> {{employe.birthDate}}</span>
+</p>
+
