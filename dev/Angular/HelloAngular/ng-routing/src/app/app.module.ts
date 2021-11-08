@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { AppRoutingModule  } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { EmployeModule } from './employe/employe.module';
 
@@ -11,7 +11,8 @@ import { EmployeModule } from './employe/employe.module';
   ],
   imports: [
     BrowserModule,
-    EmployeModule
+    EmployeModule,
+    AppRoutingModule 
     
   ],
   providers: [],

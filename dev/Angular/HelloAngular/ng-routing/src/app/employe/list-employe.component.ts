@@ -5,7 +5,7 @@ import { EMPLOYES } from './mock-employes';
 import { Employe } from './Employe';
 @Component({
     selector: 'list-employe',
-    templateUrl: './app/employe/list-employe.component.html'
+    templateUrl: './list-employe.component.html'
 })
 export class ListEmployeComponent implements OnInit {
     employes!: Employe[];
