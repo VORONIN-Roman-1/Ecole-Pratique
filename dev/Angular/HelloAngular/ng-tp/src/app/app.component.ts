@@ -10,5 +10,5 @@ import { mdiLanguageJava } from '@mdi/js';
 })
 export class AppComponent {
   title = 'ng-tp';
-  langages: Langage[]=LANGAGES;
+  langages: Langage[]=LANGAGES;z
 }
