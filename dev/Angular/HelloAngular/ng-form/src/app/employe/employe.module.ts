@@ -7,7 +7,7 @@ import { RouterModule } from '@angular/router';
 import { ListEmployeComponent } from './list-employe.component';
 import { DetailEmployeComponent } from './detail-employe.component';
 import { PourtourDirective } from './pourtour.directive';
-// import { EmployeRoleColorPipe } from './employe-role-color.pipe';
+import { EmployeRoleColorPipe } from './employe-role-color.pipe';
 import { EmployeService } from './employe.service';
 import { EditEmployeComponent } from './edit-employe.component';
 import { EmployeFormComponent } from './employe-form.component';
@@ -24,7 +24,7 @@ import { EmployeFormComponent } from './employe-form.component';
         EmployeFormComponent,
         EditEmployeComponent,
         PourtourDirective,
-        // EmployeRoleColorPipe
+        EmployeRoleColorPipe
     ],
     providers: [EmployeService]
 })

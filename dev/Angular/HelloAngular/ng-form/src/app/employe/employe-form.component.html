@@ -27,7 +27,7 @@
                         <input type="checkbox" class="filled-in" id="{{ role }}" [value]="role"
                             [checked]="hasRole(role)" (change)="selectRole($event, role)" />
                         <label [attr.for]="role">
-                            <span class="{{ role }}">{{ role }}</span>
+                            <span class="{{ role | employeRoleColor  }}">{{ role }}</span>
                         </label>
                     </div>
                 </div>

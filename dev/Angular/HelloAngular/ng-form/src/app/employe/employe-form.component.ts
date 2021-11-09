@@ -2,6 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { EmployeService } from './employe.service';
 import { Employe } from './Employe';
+import { EmployeRoleColorPipe } from './employe-role-color.pipe';
 @Component({
     selector: 'employe-form',
     templateUrl: './employe-form.component.html',

@@ -20,7 +20,7 @@ export class ListEmployeComponent implements OnInit {
     }
 
     selectEmploye(employe: Employe) {
-        alert("vous avez cliqué sur l'employé : " + employe.name)
+        //alert("vous avez cliqué sur l'employé : " + employe.name)
         let link = ['/employe', employe.id];
         this.router.navigate(link);
     }

@@ -16,8 +16,8 @@
                             <tr>
                                 <td>Roles</td>
                                 <td>
-                                    <!-- <span *ngFor="let role of employe.roles" class="{{ role | employeRoleColor }}">{{role }}
-                                    </span> -->
+                                    <span *ngFor="let role of employe.roles" class="{{ role | employeRoleColor }}">{{role }}
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -33,7 +33,7 @@
     </div>
 </div>
 <div class="card-action">
-    <a (click)="goBack()">Retour</a>
+    <a (click)="goBack()">Retour</a> <br/>
     <a (click)="goEdit(employe)">Editer</a>
     </div>
 <h4 *ngIf='!employe' class="center">Aucun employe à afficher !</h4>
