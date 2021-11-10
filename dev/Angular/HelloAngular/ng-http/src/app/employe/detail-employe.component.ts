@@ -25,5 +25,10 @@ export class DetailEmployeComponent implements OnInit {
         let link = ['/employe/edit', employe.id];
         this.router.navigate(link);
     }
+    delete(employe: Employe)  {
+        this.employeService.deleteEmploye(employe)
+        .subscribe(_ => this.goBack());
+        }
+        
 
 }

@@ -33,7 +33,10 @@
     </div>
 </div>
 <div class="card-action">
-    <a (click)="goBack()">Retour</a> <br/>
-    <a (click)="goEdit(employe)">Editer</a>
+    <a (click)="goBack()" class="waves-effect waves-light btn">Retour</a>
+    <a (click)="goEdit(employe)" class="waves-effect waves-light btn">Editer</a>
+    <a (click)="delete(employe)">Supprimer</a>
     </div>
+    
+
 <h4 *ngIf='!employe' class="center">Aucun employe à afficher !</h4>

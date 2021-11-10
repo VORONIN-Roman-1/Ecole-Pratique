@@ -54,5 +54,15 @@ export class EmployeService {
     catchError(this.handleError<any>('updatedEmploye'))
     );
     }
-    
+    deleteEmploye(employe: Employe): Observable<Employe> {
+      const url = `${this.employesUrl}/${employe.id}`;
+      const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type' : 'application/json'})
+      };
+      return this.http.delete<Employe>(url, httpOptions).pipe(
+      tap(_ => this.log(`delete employe id=${employe.id}`)),
+      catchError(this.handleError<Employe>('deleteEmploye'))
+      )
+      }
+      
 }
