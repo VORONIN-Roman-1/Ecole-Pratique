@@ -44,25 +44,36 @@ export class EmployeService {
     return ['architect', 'dev', 'testeur', 'business_analyst', 'chef_de_projet',
       'alternant'];
   }
-  updateEmploye(employe: Employe): Observable<Object>{
+  updateEmploye(employe: Employe): Observable<Object> {
     const httpOptions = {
-    headers: new HttpHeaders ({ 'Content-Type':
-    'application/json'})
+      headers: new HttpHeaders({
+        'Content-Type':
+          'application/json'
+      })
     };
-    return    this.http.put(this.employesUrl,employe,httpOptions).pipe(
-    tap(_ => this.log(`updated employe id=${employe.id}`)),
-    catchError(this.handleError<any>('updatedEmploye'))
+    return this.http.put(this.employesUrl, employe, httpOptions).pipe(
+      tap(_ => this.log(`updated employe id=${employe.id}`)),
+      catchError(this.handleError<any>('updatedEmploye'))
     );
-    }
-    deleteEmploye(employe: Employe): Observable<Employe> {
-      const url = `${this.employesUrl}/${employe.id}`;
-      const httpOptions = {
-      headers: new HttpHeaders({ 'Content-Type' : 'application/json'})
-      };
-      return this.http.delete<Employe>(url, httpOptions).pipe(
+  }
+  deleteEmploye(employe: Employe): Observable<Employe> {
+    const url = `${this.employesUrl}/${employe.id}`;
+    const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+    };
+    return this.http.delete<Employe>(url, httpOptions).pipe(
       tap(_ => this.log(`delete employe id=${employe.id}`)),
       catchError(this.handleError<Employe>('deleteEmploye'))
-      )
-      }
-      
+    )
+  }
+  searchEmployes(term: string): Observable<Employe[]> {
+    if (!term.trim()) {
+      return of([]);
+    }
+    return this.http.get<Employe[]>(`${this.employesUrl}/?name=${term}`).pipe(
+      tap(_ => this.log(`found employes matching "${term}"`)),
+      catchError(this.handleError<Employe[]>('searchEmployes', []))
+    );
+  }
+
 }

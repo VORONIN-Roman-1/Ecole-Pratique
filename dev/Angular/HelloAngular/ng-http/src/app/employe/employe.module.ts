@@ -11,6 +11,7 @@ import { EmployeRoleColorPipe } from './employe-role-color.pipe';
 import { EmployeService } from './employe.service';
 import { EditEmployeComponent } from './edit-employe.component';
 import { EmployeFormComponent } from './employe-form.component';
+import { EmployeSearchComponent } from './search-employe.component';
 
   
 @NgModule({
@@ -22,6 +23,7 @@ import { EmployeFormComponent } from './employe-form.component';
         ListEmployeComponent,
         DetailEmployeComponent,
         EmployeFormComponent,
+        EmployeSearchComponent,
         EditEmployeComponent,
         PourtourDirective,
         EmployeRoleColorPipe
