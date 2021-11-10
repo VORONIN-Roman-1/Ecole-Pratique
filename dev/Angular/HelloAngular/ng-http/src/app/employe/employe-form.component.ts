@@ -11,10 +11,10 @@ import { EmployeRoleColorPipe } from './employe-role-color.pipe';
 export class EmployeFormComponent {
     @Input()
     employe!: Employe; // propriété d'entrée du composant
- // propriété d'entrée du composant
+    // propriété d'entrée du composant
     // propriété d'entrée du composant
     roles!: Array<string>; // roles disponibles pour un employe : 'architect', 'dev',...etc
- // roles disponibles pour un employe : 'architect', 'dev',...etc
+    // roles disponibles pour un employe : 'architect', 'dev',...etc
     constructor(private employeService: EmployeService,
         private router: Router) { }
     ngOnInit() {
@@ -41,9 +41,15 @@ export class EmployeFormComponent {
     }
 
     // La méthode appelée lorsque le formulaire est soumis.
+    // La méthode appelée lorsque le formulaire est soumis.
     onSubmit(): void {
         console.log("Submit form !");
+        this.employeService.updateEmploye(this.employe)
+            .subscribe(() => this.goBack());
+    }
+    goBack(): void {
         let link = ['/employe', this.employe.id];
         this.router.navigate(link);
     }
+
 }

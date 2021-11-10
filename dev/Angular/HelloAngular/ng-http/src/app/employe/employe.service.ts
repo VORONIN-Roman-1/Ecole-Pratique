@@ -9,7 +9,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 @Injectable()
 export class EmployeService {
   constructor(private http: HttpClient) { }
-  
+
   private employesUrl = 'api/employes';
 
   // Retourne tous les employes
@@ -44,5 +44,15 @@ export class EmployeService {
     return ['architect', 'dev', 'testeur', 'business_analyst', 'chef_de_projet',
       'alternant'];
   }
-
+  updateEmploye(employe: Employe): Observable<Object>{
+    const httpOptions = {
+    headers: new HttpHeaders ({ 'Content-Type':
+    'application/json'})
+    };
+    return    this.http.put(this.employesUrl,employe,httpOptions).pipe(
+    tap(_ => this.log(`updated employe id=${employe.id}`)),
+    catchError(this.handleError<any>('updatedEmploye'))
+    );
+    }
+    
 }
