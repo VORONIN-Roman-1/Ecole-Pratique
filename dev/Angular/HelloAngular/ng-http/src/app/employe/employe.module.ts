@@ -13,6 +13,9 @@ import { EditEmployeComponent } from './edit-employe.component';
 import { EmployeFormComponent } from './employe-form.component';
 import { EmployeSearchComponent } from './search-employe.component';
 
+import { LoaderComponent } from '../loader.component';
+
+
   
 @NgModule({
     imports: [
@@ -24,6 +27,7 @@ import { EmployeSearchComponent } from './search-employe.component';
         DetailEmployeComponent,
         EmployeFormComponent,
         EmployeSearchComponent,
+        LoaderComponent,
         EditEmployeComponent,
         PourtourDirective,
         EmployeRoleColorPipe
