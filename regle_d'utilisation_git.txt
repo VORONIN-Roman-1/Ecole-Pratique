@@ -1,0 +1,42 @@
+//////configuration :
+
+//name
+git config --global user.name "John Doe"
+
+//email
+git config --global user.email johndoe@example.com
+
+//editor
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+//rebase=true
+git config --global pull.rebase true 
+
+
+//////Job:
+
+//add branch for new feature
+git checkout -b name-new-feature
+
+//daily rebase
+
+git checkout main
+git pull --rebase origin main
+git checkout name-new-feature
+git rebase main
+
+//git commit regle
+git status
+git add .
+git status
+git commit -m "[name-new-feature][nameDeveloper] text"
+git status
+
+//merge branch
+git checkout main
+git merge --no-ff name-new-feature
+git branch -d name-new-feature
+
+OR
+
+Pull request
