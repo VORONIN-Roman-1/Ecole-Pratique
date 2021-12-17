@@ -1,7 +1,9 @@
+
 .main{
     
-    display: flex;
+    /* display: flex; */
     font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
     /* text-align: center; */
 }
 .head {
@@ -15,6 +17,7 @@
 .aside {
     width: 260px;
     margin-right: 2rem;
+    float:left;
 }
 .content {
     text-align: justify;
@@ -44,7 +47,7 @@
     
 }
 .competences div{
-    margin: 1rem;
+    margin: 0.7rem;
     display: inline-block;
 }
 .langues table{
@@ -94,4 +97,10 @@ a{
 .games{
     display: flex;
     justify-content: space-between;
+}
+.ulTechLead li{
+    overflow: auto
+}
+.ulTechLead{
+    overflow: auto
 }
